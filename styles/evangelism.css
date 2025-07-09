@@ -22,7 +22,6 @@ header p{
     color: white;
     font-size: medium;
 }
-
 nav-bar{
     width: 97.55%;
     height: 10vh;
@@ -48,11 +47,6 @@ nav-bar img{
     text-justify: inter-word;
     color: grey;
     font-size: medium;
-}
-.p2 .active{
-    background-color: lightblue;
-    color: black;
-    padding: 0.5rem;
 }
 .p2-one {
     position: relative;
@@ -133,6 +127,7 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 7px;
 }
+
 nav-bar .first-btn{
     background-color: rgb(11, 11, 104);
     width: 10%;
@@ -154,6 +149,7 @@ nav-bar .first-btn:hover{
     background-color: rgb(185, 21, 21);
     transition-duration: 0.3s;
 }
+
 
 .image-container{
     width: 100%;
