@@ -158,7 +158,7 @@ nav-bar .first-btn:hover{
 .image-container{
     width: 100%;
     height: 70vh;
-    background-image: url(images/yo!.jpg);
+    background-image: url\(../images/yo!.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
