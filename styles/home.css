@@ -431,7 +431,10 @@ button:hover{
   nav-bar {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 10.3rem; /* smaller gap */
+    gap: git add .
+git commit -m "Replaced generic media query with custom responsive media query"
+git push origin main
+0.3rem; /* smaller gap */
     height: auto;
     overflow-x: auto; /* allow horizontal scroll if too wide */
   }
