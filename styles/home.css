@@ -457,13 +457,13 @@ header{
 
   nav-bar .first-btn {
     width: 12%;
-    height: 5vh;
+    height: 4vh;
     font-size: 6px;
     padding: 0.2rem;
   }
   nav-bar .first-btn img{
     width: 100%;
-    height: 7vh;
+    height: 5vh;
     margin-left: -15%;
   }
 
@@ -604,7 +604,7 @@ h5{
 
 .last section{
     background-color: rgb(7, 7, 147);
-    height: 60vh;
+    height: 20vh;
     width: 100%;
     margin-top: 10%;
     display: flex;
@@ -612,16 +612,16 @@ h5{
 }
 .last-cont section{
     width: 20%;
-    height: 40vh;
-    
+    height: 20vh;
+    margin-top: 0%;
 }
 .last-cont section > img{
     width: 100%;
-    height: 7vh;
-    margin-top: 20%;
+    height: 8vh;
+    margin-top: 10%;
 }
 ul li, .a{
-    padding-top: 0.1rem;
+    padding-top: 0.3rem;
     color: gray;
     font-size: 5px;
 }
@@ -650,8 +650,9 @@ ul{
     display: flex;
     padding-left: 1rem;
 }
-.img7{
+.last section .img7{
     width: 20%;
+    display: inline;
 }
 
  button {
@@ -665,6 +666,13 @@ ul{
     padding-right: 1rem;
     margin-left: -15%;
   }
+  .horizontal-line{
+    width: 60%;
+    border: none;
+    border-top: 1px solid grey;
+    margin-top: -8%;
+    margin-left: 20%;
+}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
