@@ -343,3 +343,88 @@ button:hover{
     display: inline;
     padding: 1rem;
 }
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header img {
+    width: 5%;
+  }
+
+  nav-bar {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  nav-bar img {
+    width: 15%;
+  }
+
+  .content-overlay > h1 {
+    font-size: 50px;
+  }
+
+  .content-overlay > h2 {
+    font-size: 20px;
+  }
+
+  .next section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .next-cont section {
+    width: 100%;
+  }
+}
+
+/* ================================
+   RESPONSIVE: MOBILE
+================================ */
+@media screen and (max-width: 600px) {
+  header img {
+    width: 8%;
+  }
+
+  nav-bar {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+
+  nav-bar img {
+    width: 20%;
+  }
+
+  .content-overlay > h1 {
+    font-size: 35px;
+  }
+
+  .content-overlay > h2 {
+    font-size: 18px;
+  }
+
+  .next section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .next-cont section {
+    width: 100%;
+  }
+
+  .img4,
+  .img5,
+  .next-cont section .img6 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .last section {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .last-cont section {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
