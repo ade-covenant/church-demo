@@ -428,6 +428,10 @@ button:hover{
 /* Media Queries for responsiveness */
 
 @media only screen and (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
 header{
     height: 0.5vh;
     font-size: 5px;
@@ -435,7 +439,7 @@ header{
   nav-bar {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0.9rem; /* smaller gap */
+    gap: 0.7rem; /* smaller gap */
     height: 2vh;
     overflow-x: visible; /* allow horizontal scroll if too wide */
     width: auto;
@@ -486,7 +490,7 @@ header{
   .btn{
     width: 70%;
     font-size: 7px;
-    height: 5vh;
+    height: 3vh;
     text-align: center;
   }
   .mid section{
@@ -551,7 +555,7 @@ header{
     margin-left: 7%;
 }
 .img3{
-    width: 35%;
+    width: 33%;
     height: 10vh;
     padding: 0.5rem;
 }
