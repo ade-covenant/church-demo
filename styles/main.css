@@ -313,152 +313,124 @@ button:hover{
     padding: 1rem;
 }
 
-/* ------------------- Tablets (≤ 992px) ------------------- */
-@media only screen and (max-width: 992px) {
-    nav-bar {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+/* MOBILE (phones, up to 480px) */
+@media only screen and (max-width: 480px) {
+  header img {
+    width: 6%;   /* smaller logo */
+    padding-left: 0.5rem;
+  }
 
-    nav-bar img {
-        width: 12%;
-    }
+  nav-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+    height: auto;
+  }
 
-    nav-bar .first-btn {
-        width: auto;
-        height: auto;
-        padding: 0.5rem 1rem;
-    }
+  nav-bar img {
+    width: 30%;
+  }
 
-    header img {
-        width: 4%;
-    }
+  .p2, .p2-one {
+    word-spacing: normal;
+    font-size: 14px;
+  }
 
-    .content-overlay > h1 {
-        font-size: 50px;
-    }
+  nav-bar .first-btn {
+    width: 80%;
+    height: 6vh;
+    margin-top: 0.5rem;
+  }
 
-    .content-overlay > h2,
-    .content-overlay > h3 {
-        font-size: 18px;
-    }
+  .image-container {
+    height: 40vh;
+    background-position: center center;
+  }
 
-    .img4, .img5 {
-        width: 80%;
-        padding-left: 0;
-    }
+  .content-overlay > h1 {
+    font-size: 24px;
+  }
 
-    .next section {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
+  .content-overlay > h2,
+  .content-overlay > h3 {
+    font-size: 14px;
+  }
 
-    .next-cont section {
-        width: 90%;
-        height: auto;
-    }
+  .last section {
+    flex-direction: column;
+    height: auto;
+  }
 
-    .last section {
-        flex-wrap: wrap;
-        height: auto;
-    }
+  .last-cont section {
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+  }
 
-    .last-cont section {
-        width: 40%;
-        margin-bottom: 2rem;
-    }
+  button {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
 
-    .horizontal-line {
-        width: 80%;
-        margin-left: 10%;
-    }
+  .horizontal-line {
+    width: 80%;
+    margin: 1rem auto;
+  }
 }
 
-/* ------------------- Mobile (≤ 768px) ------------------- */
-@media only screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 0.5rem;
-    }
+/* TABLETS (481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header img {
+    width: 4%;
+  }
 
-    header img {
-        width: 6%;
-        padding-left: 0;
-    }
+  nav-bar {
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: auto;
+  }
 
-    nav-bar {
-        flex-direction: column;
-        gap: 0.5rem;
-        height: auto;
-    }
+  nav-bar img {
+    width: 20%;
+  }
 
-    nav-bar img {
-        width: 20%;
-    }
+  .p2, .p2-one {
+    font-size: 16px;
+  }
 
-    nav-bar .first-btn {
-        width: 80%;
-        height: auto;
-        padding: 0.5rem;
-        justify-content: center;
-    }
+  nav-bar .first-btn {
+    width: 40%;
+    height: 7vh;
+  }
 
-    .p2 {
-        word-spacing: 0.2rem;
-        font-size: small;
-        text-align: center;
-    }
+  .image-container {
+    height: 50vh;
+  }
 
-    .content-overlay > h1 {
-        font-size: 30px;
-    }
+  .content-overlay > h1 {
+    font-size: 36px;
+  }
 
-    .content-overlay > h2,
-    .content-overlay > h3 {
-        font-size: 16px;
-    }
+  .content-overlay > h2,
+  .content-overlay > h3 {
+    font-size: 18px;
+  }
 
-    .image-container {
-        height: 40vh;
-    }
+  .last section {
+    flex-wrap: wrap;
+    height: auto;
+  }
 
-    .img4, .img5 {
-        width: 100%;
-        padding-left: 0;
-    }
+  .last-cont section {
+    width: 45%;
+    margin: 1rem;
+  }
 
-    .next section {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        margin-top: 5%;
-    }
+  button {
+    width: 70%;
+  }
 
-    .next-cont section {
-        width: 100%;
-        height: auto;
-    }
-
-    .last section {
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .last-cont section {
-        width: 80%;
-        margin-bottom: 1rem;
-    }
-
-    .horizontal-line {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    #p2 {
-        font-size: 13px;
-        padding: 1rem;
-    }
+  .horizontal-line {
+    width: 70%;
+    margin: 1rem auto;
+  }
 }
