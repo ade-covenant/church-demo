@@ -424,93 +424,33 @@ button:hover{
     padding: 1rem;
 }
 
-/* MOBILE (phones, up to 480px) */
+/* Existing CSS ... keep all your original code above */
+
+/* Media Queries for responsiveness */
+
 @media only screen and (max-width: 480px) {
-  header img {
-    width: 6%;   /* smaller logo */
-    padding-left: 0.5rem;
-  }
-
   nav-bar {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.3rem; /* smaller gap */
     height: auto;
+    overflow-x: auto; /* allow horizontal scroll if too wide */
   }
 
   nav-bar img {
-    width: 30%;
+    width: 15%; /* shrink logo */
   }
 
-  .p2, .p2-one {
+  .p2, .p2-one, a {
+    font-size: 10px; /* smaller text */
     word-spacing: normal;
-    font-size: 14px;
   }
 
   nav-bar .first-btn {
-    width: 80%;
-    height: 6vh;
-    margin-top: 0.5rem;
-  }
-
-  .image-container {
-    height: 40vh;
-    background-position: center center;
-  }
-
-  .content-overlay > h1 {
-    font-size: 24px;
-  }
-
-  .content-overlay > h2,
-  .content-overlay > h3 {
-    font-size: 14px;
-  }
-
-  .last section {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .last-cont section {
-    width: 100%;
-    margin: 1rem 0;
-    text-align: center;
-  }
-
-  button {
-    width: 90%;
-    margin: 0.5rem auto;
-  }
-
-  .horizontal-line {
-    width: 80%;
-    margin: 1rem auto;
-  }
-}
-
-/* TABLETS (481px to 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  header img {
-    width: 4%;
-  }
-
-  nav-bar {
-    flex-wrap: wrap;
-    gap: 1rem;
-    height: auto;
-  }
-
-  nav-bar img {
-    width: 20%;
-  }
-
-  .p2, .p2-one {
-    font-size: 16px;
-  }
-
-  nav-bar .first-btn {
-    width: 40%;
-    height: 7vh;
+    width: auto;
+    height: 5vh;
+    font-size: 10px;
+    padding: 0.2rem;
   }
 
   .image-container {
@@ -518,30 +458,63 @@ button:hover{
   }
 
   .content-overlay > h1 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
-  .content-overlay > h2,
-  .content-overlay > h3 {
+  .content-overlay > h2 {
+    font-size: 15px;
+  }
+
+  .last section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .last-cont section {
+    width: 80%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  button {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  nav-bar {
+    gap: 1rem;
+  }
+
+  nav-bar img {
+    width: 10%;
+  }
+
+  .p2, .p2-one, a {
+    font-size: 12px;
+  }
+
+  .content-overlay > h1 {
+    font-size: 50px;
+  }
+
+  .content-overlay > h2 {
     font-size: 18px;
   }
 
   .last section {
     flex-wrap: wrap;
-    height: auto;
   }
 
   .last-cont section {
-    width: 45%;
-    margin: 1rem;
+    width: 40%;
+    margin: 1rem 0;
   }
 
   button {
-    width: 70%;
-  }
-
-  .horizontal-line {
-    width: 70%;
-    margin: 1rem auto;
+    width: 60%;
   }
 }
+
+/* You can keep your desktop styles as is outside media queries */
