@@ -325,87 +325,152 @@ button:hover{
     padding: 1rem;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  header img {
-    width: 5%;
-  }
+/* ------------------- Tablets (≤ 992px) ------------------- */
+@media only screen and (max-width: 992px) {
+    nav-bar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 
-  nav-bar {
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
+    nav-bar img {
+        width: 12%;
+    }
 
-  nav-bar img {
-    width: 15%;
-  }
+    nav-bar .first-btn {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+    }
 
-  .content-overlay > h1 {
-    font-size: 50px;
-  }
+    header img {
+        width: 4%;
+    }
 
-  .content-overlay > h2 {
-    font-size: 20px;
-  }
+    .content-overlay > h1 {
+        font-size: 50px;
+    }
 
-  .next section {
-    flex-direction: column;
-    height: auto;
-  }
+    .content-overlay > h2,
+    .content-overlay > h3 {
+        font-size: 18px;
+    }
 
-  .next-cont section {
-    width: 100%;
-  }
+    .img4, .img5 {
+        width: 80%;
+        padding-left: 0;
+    }
+
+    .next section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .next-cont section {
+        width: 90%;
+        height: auto;
+    }
+
+    .last section {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .last-cont section {
+        width: 40%;
+        margin-bottom: 2rem;
+    }
+
+    .horizontal-line {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
 
-/* ================================
-   RESPONSIVE: MOBILE
-================================ */
-@media screen and (max-width: 600px) {
-  header img {
-    width: 8%;
-  }
+/* ------------------- Mobile (≤ 768px) ------------------- */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem;
+    }
 
-  nav-bar {
-    flex-direction: column;
-    height: auto;
-    gap: 1rem;
-  }
+    header img {
+        width: 6%;
+        padding-left: 0;
+    }
 
-  nav-bar img {
-    width: 20%;
-  }
+    nav-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+        height: auto;
+    }
 
-  .content-overlay > h1 {
-    font-size: 35px;
-  }
+    nav-bar img {
+        width: 20%;
+    }
 
-  .content-overlay > h2 {
-    font-size: 18px;
-  }
+    nav-bar .first-btn {
+        width: 80%;
+        height: auto;
+        padding: 0.5rem;
+        justify-content: center;
+    }
 
-  .next section {
-    flex-direction: column;
-    height: auto;
-  }
+    .p2 {
+        word-spacing: 0.2rem;
+        font-size: small;
+        text-align: center;
+    }
 
-  .next-cont section {
-    width: 100%;
-  }
+    .content-overlay > h1 {
+        font-size: 30px;
+    }
 
-  .img4,
-  .img5,
-  .next-cont section .img6 {
-    width: 100%;
-    padding: 0;
-  }
+    .content-overlay > h2,
+    .content-overlay > h3 {
+        font-size: 16px;
+    }
 
-  .last section {
-    flex-wrap: wrap;
-    height: auto;
-  }
+    .image-container {
+        height: 40vh;
+    }
 
-  .last-cont section {
-    width: 100%;
-    margin: 1rem 0;
-  }
+    .img4, .img5 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .next section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 5%;
+    }
+
+    .next-cont section {
+        width: 100%;
+        height: auto;
+    }
+
+    .last section {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .last-cont section {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .horizontal-line {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #p2 {
+        font-size: 13px;
+        padding: 1rem;
+    }
 }
