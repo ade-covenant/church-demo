@@ -431,7 +431,7 @@ button:hover{
   nav-bar {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0.3rem; /* smaller gap */
+    gap: 10.3rem; /* smaller gap */
     height: auto;
     overflow-x: auto; /* allow horizontal scroll if too wide */
   }
