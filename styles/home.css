@@ -569,7 +569,7 @@ h5{
     font-size: 15px;
     font-weight: bold;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 0.1rem;
     color: blue;
 }
 
@@ -612,7 +612,7 @@ h5{
 }
 .last-cont section{
     width: 20%;
-    height: 25vh;
+    height: 15vh;
     margin-top: 0%;
 }
 .last-cont section > img{
@@ -672,7 +672,7 @@ ul .img7{
     width: 60%;
     border: none;
     border-top: 1px solid grey;
-    margin-top: -15%;
+    margin-top: -13%;
 }
 #p2{
     font-size: 5px;
