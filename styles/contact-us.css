@@ -405,57 +405,263 @@ button:hover{
 /* Media Queries for responsiveness */
 
 @media only screen and (max-width: 480px) {
+   *{
+        margin: 0;
+        padding: 0;
+    }
+header{
+    height: 0.5vh;
+    font-size: 5px;
+}
   nav-bar {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0.3rem; /* smaller gap */
-    height: auto;
-    overflow-x: auto; /* allow horizontal scroll if too wide */
+    gap: 0.7rem; /* smaller gap */
+    height: 2vh;
+    overflow-x: visible; /* allow horizontal scroll if too wide */
+    width: auto;
+    z-index: 999;
   }
 
   nav-bar img {
-    width: 15%; /* shrink logo */
+    width: 8%; /* shrink logo */
   }
 
   .p2, .p2-one, a {
-    font-size: 10px; /* smaller text */
+    font-size: 6px; /* smaller text */
     word-spacing: normal;
   }
 
   nav-bar .first-btn {
-    width: auto;
-    height: 5vh;
-    font-size: 10px;
+    width: 12%;
+    height: 4vh;
+    font-size: 6px;
     padding: 0.2rem;
+  }
+  nav-bar .first-btn img{
+    width: 100%;
+    height: 5vh;
+    margin-left: -15%;
   }
 
   .image-container {
-    height: 50vh;
+    height: 30vh;
   }
-
+  .image-overlay{
+    height: 33.5vh;
+  }
+  .content-overlay{
+    top: 25%;
+    left: 10%;
+  }
   .content-overlay > h1 {
-    font-size: 40px;
-  }
-
-  .content-overlay > h2 {
     font-size: 15px;
   }
 
-  .last section {
-    flex-direction: column;
+  .content-overlay > h2 {
+    font-size: 7px;
+  }
+  .content-overlay > h3 {
+    font-size: 7px;
+  }
+  .btn{
+    width: 70%;
+    font-size: 7px;
+    height: 3vh;
+    text-align: center;
+  }
+
+.mid section{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
+    background-color: rgb(244, 255, 255);
+    margin-top: 7%;
+}
+.mid-cont section{
+    width: 25%;
+    height: 10vh;
+    background-color: olivedrab;
+}
+.mid-cont section #img{
+    width: 20%;
+    height: 5vh;
+}
+h3{
+    color: grey;
+    font-size: 7px;
+    text-align: center;
+}
 
-  .last-cont section {
-    width: 80%;
-    height: auto;
-    margin: 1rem 0;
-  }
+.next section{
+    height: 37.7vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: none;
+    margin-top: 8%;
+}
+.next-cont section{
+    height: 30vh;
+    max-width: 100%;
+    display: block;
+}
+.section1, .section2{
+    float: left;    
+}
+.section1{
+    width: 33%;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+.section2{
+    width: 54%;
+    padding-top: 0.5rem;
+}
+h4{
+    font-size: 8px;
+    color: blue;
+    font-weight: normal;
+    text-align: justify;
+    padding-top: 0.1rem;
+}
 
-  button {
-    width: 80%;
-    height: auto;
+h5{
+    font-size: 10px;
+    color: blue;
+    font-weight: bold;
+    padding-top: 0.1rem;
+}
+.section1 img{
+    width: 10%;
+    background-color: rgba(0, 0, 255, 0.741);
+    padding: 0rem;
+    border-radius: 50%;
+    margin-top: 1%;
+}
+.section1 img:hover{
+    background-color: rgba(0, 0, 38, 0.741);
+}
+.input-field{
+    width: 30%;
+    height: 1vh;
+    background-color: rgba(0, 0, 255, 0.741);
+    color: white;
+    font-size: 2px;
+    border: none;
+    padding: 0.5rem;
+    margin: 2%;
+    outline: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20); 
+}
+::placeholder{
+    color: white;
+    font-size: 5px;
+}
+textarea{
+    width: 76.7%;
+    height: 4vh;
+    background-color: rgba(0, 0, 255, 0.741);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+    color: white;
+    padding-left: 0.5rem;
+    padding-top: 0.3rem;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 5px;
+    text-wrap: wrap;
+    outline: none;
+}
+.btn1{
+    background-color: red;
+    width: 35%;
+    color: white;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    margin: 2%;
+    font-weight: bold;
+}
+
+ .last section{
+    background-color: rgb(7, 7, 147);
+    height: 25vh;
+    width: 100%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+}
+.last-cont section{
+    width: 20%;
+    height: 15vh;
+    margin-top: 0%;
+}
+.last-cont section > img{
+    width: 100%;
+    height: 8vh;
+    margin-top: 10%;
+}
+ul li, .a{
+    padding-top: 0.3rem;
+    color: gray;
+    font-size: 5px;
+}
+ul, li{
+    list-style-type: none;
+}
+ul{
+    margin-left: 0%;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.a{
+    text-decoration: none;
+}
+.a:hover{
+    color: red;
+    text-decoration: none;
+}
+#li{
+    font-weight: bold;
+    font-size: 6px;
+    color: white;
+}
+#img{
+    width: 15%;
+    display: flex;
+    padding-left: 1rem;
+}
+ul .img7{
+    width: 15%;
+    display: inline;
+    margin: -17%;
+}
+
+ button {
+    width: 70%;
+    height: 4vh;
+    font-size: 6px;
+    padding: 0.2rem;
   }
+  button > img{
+    height: 6vh;
+    padding-right: 1rem;
+    margin-left: -15%;
+  }
+  .horizontal-line{
+    width: 60%;
+    border: none;
+    border-top: 1px solid grey;
+    margin-top: -13%;
+}
+#p2{
+    font-size: 5px;
+    margin-top: -8%;
+}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
