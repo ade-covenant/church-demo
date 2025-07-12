@@ -330,57 +330,179 @@ button:hover{
 /* Media Queries for responsiveness */
 
 @media only screen and (max-width: 480px) {
+   *{
+        margin: 0;
+        padding: 0;
+    }
+header{
+    height: 0.5vh;
+    font-size: 5px;
+}
   nav-bar {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0.3rem; /* smaller gap */
-    height: auto;
-    overflow-x: auto; /* allow horizontal scroll if too wide */
+    gap: 0.7rem; /* smaller gap */
+    height: 2vh;
+    overflow-x: visible; /* allow horizontal scroll if too wide */
+    width: auto;
+    z-index: 999;
   }
 
   nav-bar img {
-    width: 15%; /* shrink logo */
+    width: 8%; /* shrink logo */
   }
 
   .p2, .p2-one, a {
-    font-size: 10px; /* smaller text */
+    font-size: 6px; /* smaller text */
     word-spacing: normal;
   }
 
   nav-bar .first-btn {
-    width: auto;
-    height: 5vh;
-    font-size: 10px;
+    width: 12%;
+    height: 4vh;
+    font-size: 6px;
     padding: 0.2rem;
+  }
+  nav-bar .first-btn img{
+    width: 100%;
+    height: 5vh;
+    margin-left: -15%;
   }
 
   .image-container {
-    height: 50vh;
+    height: 30vh;
   }
-
+  .image-overlay{
+    height: 33.5vh;
+  }
+  .content-overlay{
+    top: 25%;
+    left: 7%;
+  }
   .content-overlay > h1 {
-    font-size: 40px;
-  }
-
-  .content-overlay > h2 {
     font-size: 15px;
   }
 
-  .last section {
-    flex-direction: column;
-    align-items: center;
+  .content-overlay > h2 {
+    font-size: 7px;
   }
-
-  .last-cont section {
+  .content-overlay > h3 {
+    font-size: 7px;
+  }
+  .btn{
+    width: 70%;
+    font-size: 7px;
+    height: 3vh;
+    text-align: center;
+  }
+  .mid section{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.mid-cont section{
+    width: 50%;
+    height: 75vh;
+    display: block;
+}
+.section1{
+    padding: 3rem 1rem 0rem 1rem;
+}
+.section2{
+    padding: 3rem 1rem 0rem 0rem;
+}
+h3{
+    font-size: 7px;
+    color: grey;
+    padding: 0.5rem 0.2rem;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 0.5rem;
+}
+  .picture{
     width: 80%;
-    height: auto;
-    margin: 1rem 0;
-  }
+    height: 28vh;
+    border: 1px solid black;
+    padding: 1rem;
+}
+  .last section{
+    background-color: rgb(7, 7, 147);
+    height: 25vh;
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.last-cont section{
+    width: 20%;
+    height: 15vh;
+    margin-top: 0%;
+}
+.last-cont section > img{
+    width: 100%;
+    height: 8vh;
+    margin-top: 10%;
+}
+ul li, .a{
+    padding-top: 0.3rem;
+    color: gray;
+    font-size: 5px;
+}
+ul, li{
+    list-style-type: none;
+}
+ul{
+    margin-left: 0%;
+    margin-top: 10%;
+    width: 100%;
+}
 
-  button {
-    width: 80%;
-    height: auto;
+.a{
+    text-decoration: none;
+}
+.a:hover{
+    color: red;
+    text-decoration: none;
+}
+#li{
+    font-weight: bold;
+    font-size: 6px;
+    color: white;
+}
+#img{
+    width: 15%;
+    display: flex;
+    padding-left: 1rem;
+}
+ul .img7{
+    width: 15%;
+    display: inline;
+    margin: 7%;
+}
+
+ button {
+    width: 70%;
+    height: 4vh;
+    font-size: 6px;
+    padding: 0.2rem;
   }
+  button > img{
+    height: 6vh;
+    padding-right: 1rem;
+    margin-left: -15%;
+  }
+  .horizontal-line{
+    width: 60%;
+    border: none;
+    border-top: 1px solid grey;
+    margin-top: -10%;
+}
+#p2{
+    font-size: 5px;
+    margin-top: -8%;
+}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
