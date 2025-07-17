@@ -22,6 +22,7 @@ header p{
     color: white;
     font-size: medium;
 }
+
 nav-bar{
     width: 97.55%;
     height: 10vh;
@@ -34,8 +35,8 @@ nav-bar{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    z-index: 1;
+    gap: 0.1rem;
+    z-index: 100;
 }
 
 nav-bar img{
@@ -43,15 +44,20 @@ nav-bar img{
 }
 
 .p2{
-    word-spacing: 1rem;
+    word-spacing: normal;
     text-justify: inter-word;
     color: grey;
     font-size: medium;
 }
+.active{
+    background-color: rgba(173, 216, 230, 0.539);
+    color: white;
+    padding: 0.5rem;
+}
 .p2-one {
     position: relative;
     display: inline-block;
-    color: white;
+    color: black;
     z-index: 10;
     margin-right: -1%;
     padding-bottom: 0.1rem;
@@ -119,7 +125,7 @@ nav-bar img{
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
     display: inline;
 }
 
@@ -127,7 +133,6 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 7px;
 }
-
 nav-bar .first-btn{
     background-color: rgb(11, 11, 104);
     width: 10%;
@@ -162,7 +167,7 @@ nav-bar .first-btn:hover{
 }
 .image-overlay {
   width: 100%;
-  height: 70%;
+  height: 71.8%;
   position: absolute;
   top: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));

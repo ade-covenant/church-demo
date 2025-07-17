@@ -445,10 +445,10 @@ header{
   }
 
   .image-container {
-    height: 30vh;
+    height: 25vh;
   }
   .image-overlay{
-    height: 33.5vh;
+    height: 30vh;
   }
   .content-overlay{
     top: 25%;
@@ -491,7 +491,7 @@ header{
 .mid section #img{
     width: 20%;
     height: 4vh;
-    margin-left: -25%;
+    margin-left: -30%;
 }
 h3{
     color: grey;
