@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+.background{
+    background-image: url(/Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 84.7vh;
+}
+header{
+    background-color: blue;
+    height: 5vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    align-content: center;
+    align-items: center;
+    font-weight: bolder;
+    display: flex;
+    z-index: 999;
+}
+header img{
+    width: 9%;
+    height: 10vh;
+    padding-left: 14rem;
+}
+.lone section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 7.5%;
+}
+.lone-cont section{
+    margin-top: 0%;
+    height: 77.5vh;
+}
+#section1{
+    width: 15%;
+    padding: 0.5rem 1rem 0rem 1rem;
+}
+#section2{
+    width: 65%;
+    display: inline;
+    align-content: center;
+    padding-left: 6rem;
+}
+#section3{
+    width: 20%;
+    padding: 0.5rem;
+}
+.image-container{
+    background-image: url(/wwtbam_image2.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0%;
+}
+.image-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+}
+.pagination{
+    
+    display: inline-block;
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pagination li{
+    list-style-type: none;
+    display: inline;
+}
+#a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+    float: left;
+    margin: 0.1rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.363);
+}
+.pagination a{
+    background-color: rgba(255, 255, 255, 0.363);
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.7rem 0.62rem 0.7rem 0.62rem;
+    float: left;
+    margin: 0.1rem;
+    color: black;
+}
+.pagination a:hover, a:active, #a:hover, #a:active{
+    background-color: blue;
+    color: white;
+}
+h3{
+    color: white;
+    font-size: small;
+    text-align: left;
+    font-weight: normal;
+    display: block;
+}
+#span{
+    font-weight: bold;
+    line-height: 1rem;
+}
+input[type="checkbox"], input[type="radio"] {
+        display: none;
+    }
+    label{
+        margin: 1% 1% 1% 0%;
+        display: inline-block;
+        width: 40%;
+        padding: 5px;
+        border: 1px solid white;
+        color: white;
+    }
+    label span{
+        display: inline-block;
+        width: 15px;
+        height: 2.5vh;
+        border: 3px solid white;
+        border-radius: 50%;
+        margin-left: 2%;
+        margin-right: 10%;
+        align-content: center;
+    }
+    input[type="radio"]:checked + label {
+        background-color: green;
+        color: white;
+    }
+    input[type="radio"]:checked + label > span {
+        background-color: blue;
+    }
+    #h1{
+        width: 84.5%;
+        padding: 1rem;
+        text-align: center;
+        color: white;
+        background-color: blue;
+        box-sizing: border-box;
+    }
+    button{
+        background-color: blue;
+        width: 20%;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: inline;
+        outline: none;
+        border: none;
+    }
+    .lft-btn{
+        float: left;
+    }
+    .rgh-btn{
+        float: right;
+        margin-right: 15.5%;
+    }
+    .rgh-btn::after{
+    content: "▼";
+    margin-left: 2%;
+}
+.lft-btn::after{
+    content: "▼";
+    margin-right: 2%;
+}

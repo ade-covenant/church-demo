@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistic Alt</title>
+<style>
+    *{
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 100%;
+        height: 200vh;
+    }
+    .first section{
+        background-color: white;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0%;
+    }
+    .first-cont section{
+        width: 25%;
+        height: 10vh;
+    }
+    .first-cont section img{
+        width: 50%;
+        height: 6vh;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    header{
+        background-color: red;
+        height: 5vh;
+        width: 100%;
+        margin-top: -90.2%;
+        grid-template-columns: auto 1fr;
+        display: flex;
+    }
+    h1{
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: bolder;
+        text-justify: inter-word;
+        word-spacing: 100px;
+        margin-top: 0.5%;
+        text-align: center;
+        background: fixed;
+        margin-left: 10%;
+    }
+    a{
+        text-underline-offset: none;
+        text-decoration: none;
+        color: white;
+        background: none;
+    }
+    header button{
+        background-color: rgb(8, 8, 99);
+        color: white;
+        height: 5vh;
+        width: 10%;
+        margin-right: 10%;
+    }
+    img{
+        width: 100%;
+        height: 85vh;
+        margin-top: 0%;
+    }
+    div{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        margin-top: -3%;
+    }
+    .second section{
+        background: none;
+        width: 100%;
+        height: 60vh;
+        margin-top: -17%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .second-cont section{
+        background-color: white;
+        width: 20%;
+        height: 60vh;
+        border: 1px black solid;
+    }
+    .second-cont section img{
+        width: 90%;
+        height: 30vh;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .second-cont section h3{
+        color: black;
+        font-weight: 1000;
+        font-size: medium;
+        font-family:  sans-serif;
+        margin-top: 80%;
+        margin-left: -90%;
+    }
+    .second-cont section h4{
+        color: black;
+        font-weight: 500;
+        font-size: smaller;
+        font-family: sans-serif;
+        margin-top: 95%;
+        margin-left: -95%;
+    }
+    .second-cont section h5{
+        color: black;
+        font-weight: bold;
+        font-size: small;
+        font-family: sans-serif;
+        margin-top: 130%;
+        margin-left: -92%;
+    }
+    article{
+        background-color: rgb(5, 5, 91);
+        width: 100%;
+        height: 80vh;
+        margin-top: -78%;
+    }
+    .third-cont-1 section{
+        background-color: none;
+        width: 100%;
+        height: 50vh;
+        margin-top: 2.5%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .third-cont-1-section section{
+        width: 20%;
+        height: 30vh;
+        border: 2px red solid;
+    }
+    .third-cont-2 section{
+        background-color: none;
+        width: 100%;
+        height: 50vh;
+        margin-top: -37%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .third-cont-2-section section{
+        width: 20%;
+        height: 30vh;
+        border: 2px red solid;
+    }
+    .third section h3{
+        color: white;
+        font-weight: 1000;
+        font-size: medium;
+        font-family:  sans-serif;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .third section h4{
+        color: rgb(194, 185, 185);
+        font-weight: 500;
+        font-size: smaller;
+        font-family: sans-serif;
+        margin-top: 25%;
+        margin-left: -93%;
+    }
+    .third section h5{
+        color: white;
+        font-weight: bold;
+        font-size: small;
+        font-family: sans-serif;
+        margin-top: 60%;
+        margin-left: -92%;
+    }
+    .third section img{
+        width: 100%;
+        height: 30vh;
+    }
+    .tolu{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        margin-top: 5%;
+    }
+    .fourth section{
+        background-color: none;
+        width: 80%;
+        height: 60vh;
+        margin-top: -50%;
+        margin-left: 7%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .fourth-cont section{
+
+        background-color: none;
+        width: 20%;
+        height: 60vh;
+    }
+    .fourth section h3{
+        color: black;
+        font-weight: 1000;
+        font-size: medium;
+        font-family:  sans-serif;
+        margin-top: 100%;
+        margin-left: -70%;
+    }
+    .fourth section h4{
+        color: black;
+        font-weight: 500;
+        font-size: smaller;
+        font-family: sans-serif;
+        margin-top: 130%;
+        margin-left: -100%;
+    }
+    .fourth section img{
+        width: 60%;
+        height: 25vh;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .covey{
+        background-color: rgb(5, 5, 91);;
+        width: 100%;
+        height: 60vh;
+        margin-top: 0%;
+    }
+    .fifth section{
+        width: 100;
+        height: 30vh;
+        background-color: none;
+        display: flex;
+        justify-content: center;
+        gap:2%;
+        margin-top: 3%;
+    }
+    .fifth-cont section{
+        width: 20%;
+        height: 30vh;
+        margin-top: 3%;
+    }
+    .fifth section img{
+        width: 80%;
+        height: 10vh;
+        margin-left: -40%;
+    }
+    .fifth section h3{
+        color: white;
+        font-weight: 1000;
+        font-size: medium;
+        font-family:  sans-serif;
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+    .fifth section h4{
+        color: rgb(194, 185, 185);
+        font-weight: 500;
+        font-size: smaller;
+        font-family: sans-serif;
+        margin-top: 40%;
+        margin-left: -110%;
+    }
+</style>
+</head>
+<body>
+    <section class="first section">
+        <section class="first-cont section">
+            <section>
+                <img src="Boxpin.png">
+                </img>
+            </section>
+            <section>
+                <img src="Time.png">
+                </img>
+            </section>
+            <section>
+                <img src="Location.png">
+                </img>
+            </section>
+            <section>
+                <img src="Call.png">
+                </img>
+            </section>
+        </section>    
+   </section>
+   <header>
+        <h1>
+            <a href="">Home</a>                 <a href="">Our-Pricing</a>                          <a href="">About-Us</a>
+            <a href="">Services</a>             <a href="">News</a>                                 <a href="">Pages</a>
+        </h1>
+        <button>
+            Get A Quote
+        </button>
+</header>
+<img src="Boss.jpg">
+</img>
+<div>
+<h6 style="color:red; font-size: medium; font-family: sans-serif; text-align: center; margin-top: 7%;">
+    #OurServices
+</h6>
+<h2 style="color: black; font-weight: bolder; font-size: xx-large;
+ font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: -95%;
+ text-align: center;">
+ What We Do
+</h2>
+</div>
+<section class="second section">
+    <section class="second-cont section">
+        <section>
+            <img src="Ocean.jpeg">
+            </img>
+            <h3>
+                Ocean Cargo
+            </h3>
+            <h4>
+                Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eir tempor invidunt dolone magna...
+            </h4>
+            <h5>
+                <a href=""; style="color: black";>
+                    Read More...
+                </a>
+            </h5>
+        </section>
+        <section>
+            <img src="fly.jpeg">
+            </img>
+            <h3>
+                Fly Anywhere
+            </h3>
+            <h4>
+                Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eir tempor invidunt dolone magna...
+            </h4>
+            <h5>
+                <a href=""; style="color: black";>
+                    Read More...
+                </a>
+            </h5>
+        </section>
+        <section>
+            <img src="storage.png">
+            </img>
+            <h3>
+                Cargo Storage
+            </h3>
+            <h4>
+                Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eir tempor invidunt dolone magna...
+            </h4>
+            <h5>
+                <a href=""; style="color: black;">
+                    Read More...
+                </a>
+            </h5>
+        </section>
+    </section>
+</section>
+<article>
+    <section class="third section">
+        <section class="third-cont-1 section">
+            <section class="third-cont-1-section section">
+            <section style="background-color: red;">
+                <h3>
+                    Services for you
+                </h3>
+                <h4>
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eirmod tempor invidunt dolone magna...
+                </h4>
+                <h5>
+                    Read More...
+                </h5>
+            </section>
+            <section>
+                <h3>
+                    Road Freight
+                </h3>
+                <h4>
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eirmod tempor invidunt dolone magna...
+                </h4>
+                <h5>
+                    Read More...
+                </h5>
+            </section>
+            <section>
+                <h3>
+                    Multimodal Transport
+                </h3>
+                <h4>
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eirmod tempor invidunt dolone magna...
+                </h4>
+                <h5>
+                    Read More...
+                </h5>
+            </section>
+        </section>
+        </section>
+        <section class="third-cont-2 section">
+            <section class="third-cont-2-section section">
+            <section>
+                <img src="Boxpin.png">
+                </img>
+            </section>
+            <section>
+                <h3>
+                    Freight Forwarding
+                </h3>
+                <h4>
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eirmod tempor invidunt dolone magna...
+                </h4>
+                <h5>
+                    Read More...
+                </h5>
+            </section>
+            <section>
+                <h3>
+                    Fly Anywhere
+                </h3>
+                <h4>
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eirmod tempor invidunt dolone magna...
+                </h4>
+                <h5>
+                    Read More...
+                </h5>
+            </section>
+            </section>
+        </section>
+    </article>
+    <section class="tolu">
+        <h6 style="color:red; font-size: medium; font-family: sans-serif; text-align: center; margin-top: 0%;">
+            #OurProcess
+        </h6>
+        <h2 style="color: black; font-weight: bolder; font-size: xx-large;
+         font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: -93%;
+         text-align: center;">
+         Our Work Process
+        </h2>
+        <section class="fourth section">
+            <section class="fourth-cont section">
+                <section>
+                    <img src="picking.png">
+                    </img>
+                    <h3>
+                        Replenishing & Picking
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eirmod tempor invidunt dolone magna...
+                    </h4>
+                </section>
+                <section>
+                    <img src="warehouse.png">
+                    </img>
+                    <h3>
+                        Warehousing Operation
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eirmod tempor invidunt dolone magna...
+                    </h4>
+                </section>
+                <section>
+                    <img src="package.png">
+                    </img>
+                    <h3>
+                        Packaging
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eirmod tempor invidunt dolone magna...
+                    </h4>
+                </section>
+                <section>
+                    <img src="transport.png">
+                    </img>
+                    <h3>
+                        Transportation Process
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eirmod tempor invidunt dolone magna...
+                    </h4>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="covey">
+        <section class="fifth section">
+            <section class="fifth-cont section">
+                <section>
+                    <img src="Boxpin.png">
+                    </img>
+                    <img src="All.png" style="margin-top: 50%; margin-left: -70%; height: 5vh; width: 40%;">
+                </section>
+                <section>
+                    <h3>
+                        About Us
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eir tempor invidunt dolone magna...
+                    </h4>
+                </section>
+                <section>
+                    <h3>
+                        Services
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet..conseteur sadpscing eistr. send dam nomumy eir tempor invidunt dolone magna...
+                    </h4>
+                </section>
+                <section>
+                    <h3 style="margin-left: 10%;">
+                        Latest News 
+                    </h3>
+                    <img src="Ocean.jpeg" style="width: 30%; height: 10vh; border-radius: 10%; margin-left: -120%; margin-top: 25%;">
+                    </img>
+                    <img src="storage..jpeg" style="width: 30%; height: 10vh; border-radius: 10%; margin-left: 10%; margin-top: 25%;">
+                    </img>
+                    <h4 style="margin-top: 50%; margin-left: -70%;">
+                        Lorem ipsum dolor sit amet...
+                    </h4>
+                </section>
+            </section>
+        </section>
+        <footer style="text-align: center; color: white; font-size: small; margin-top: -70%;">
+            &copy Copyright AdeCovenant 05/05/2025
+        </footer>
+    </section>  
+</body>
+</html>

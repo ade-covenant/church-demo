@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUCATION</title>
+    <style>
+        *{
+            margin: 0%; 
+            column-span: none; 
+            max-width: 100%;        
+            transition-duration: 0s;
+        }
+        [class*="col-"] {
+            width: 100%;
+            float: left;
+        }
+        @media only screen and (min-width: 480px) and (max-width: 767px){
+            .col-md-1 {width: 8.333333333333333%;}
+            .col-md-2 {width:16.66666666666667%;}
+            .col-md-3 {width: 25%;}
+            .col-md-1 {width: 33.33333333333333;}
+            .col-md-5 {width: 41.66666666666667%;}
+            .col-md-6 {width: 50%;}
+            .col-md-7 {width: 58.33333333333333%;}
+            .col-md-8 {width: 66.66666666666667%;}
+            .col-md-9 {width: 75%;}
+            .col-md-10 {width: 83.33333333333333%;}
+            .col-md-11 {width: 91.66666666666667;}
+            .col-md-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px){
+            .col-l-1 {width: 8.333333333333333%;}
+            .col-l-2 {width:16.66666666666667%;}
+            .col-l-3 {width: 25%;}
+            .col-l-1 {width: 33.33333333333333;}
+            .col-l-5 {width: 41.66666666666667%;}
+            .col-l-6 {width: 50%;}
+            .col-l-7 {width: 58.33333333333333%;}
+            .col-l-8 {width: 66.66666666666667%;}
+            .col-l-9 {width: 75%;}
+            .col-l-10 {width: 83.33333333333333%;}
+            .col-l-11 {width: 91.66666666666667;}
+            .col-l-12 {width: 100%;}
+        }
+        @media (max-width:768%){
+            width: 50%;
+        }
+        @media (max-width: 480px) {
+            width: 100px;
+        }
+        .whole-cont-section{
+            background-color: rgb(11, 9, 77);
+            width: 98%;
+            height: 230vh;
+            margin: none;
+            align-items: center;
+            border: 15px solid;
+            border-color: grey;           
+        }
+        .whole-cont-section h2{ 
+            color: rgb(199, 222, 226);
+            padding-top: none;
+            padding-left: 10%;
+            text-align-last: justify;
+            text-justify: inter-word;
+            word-spacing: -100px;
+            font-size: smaller;
+        }
+        button{
+            background-color: green;
+            color: white;
+            border: none;
+            margin: none;
+            height: 40px;
+        }
+        div{
+            background-color: white;
+            width: 100%;
+            height: 10vh;
+            color:blue;
+            font-size: smaller;
+            display: flex;
+            grid-template-columns: auto 1fr;
+        }
+        img{
+            width: 340px;
+            height: 50px;
+            padding-top: 10px;   
+            padding-left: 40px;        
+        }
+        h3{
+            font-size: 15px;
+            color: rgb(20, 4, 247);
+            padding-top: 25px;
+            padding-left: 250px;
+            /*text-align-last: right;*/
+            text-justify: inter-word;
+            word-spacing: 30px;            
+        }
+        a{
+            text-underline-offset: none;
+            color: rgb(30, 61, 233);   
+            text-decoration: none;        
+        }
+        /*a:link{
+            text-decoration: none;
+        }*/
+        a:visited{
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: none;
+            color: green;
+            /*text-decoration: underline solid green;*/
+            /*offset-distance: 3px 0px;*/
+            /*transition-duration: 0s;*/
+            /*text-decoration-line: underline solid rgb(221, 4, 4);*/
+            /*font-size: large;*/
+        }
+        /*.image-cont-section{
+            align-content: left;
+            display: grid;
+        }*/
+        .image-container{
+            position: relative;
+        }
+        .text-overlay{
+            position: absolute;
+            top: 30%;
+            left: 5%;
+            transform: -50%, -50%;
+            /*color: rgb(255, 255, 255);
+            font-size: large;
+            font-weight: bold;
+            -webkit-text-stroke: 1px blue;*/
+        }
+        .image-container img{
+            width: 100%;
+            height: 100vh; 
+            margin-left: -40px;  
+            margin-top: -10px;               
+        }
+        .small{
+            color: rgb(255, 255, 255);
+            font-size: x-large; 
+            font-weight: bolder; 
+            -webkit-text-stroke: 1px blue; 
+            font-family: Arial, Helvetica, sans-serif;                    
+        }
+        .big{
+            color: rgb(255, 255, 255);
+            font-size: xx-large;
+            font-weight: bolder;
+            -webkit-text-stroke: 1px blue;
+        }
+        .text-overlay button{
+            background-color: white;
+            border: 5px solid blue;
+            border-left-color: greenyellow;
+            color: blue;
+            width: 100px;
+            height: 50px;
+            margin-top: 50px;
+            font-weight: bolder;
+            
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+            transition-duration: 0s;
+        }
+        h1{
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+        .lone-cont-section{
+            background-color: white;
+            border: 15px double rgb(54, 22, 231);
+            justify-content: space-around;
+            width: 80%;
+            height: 20vh;
+            margin-left: 10%;
+            margin-right: 10%;
+            display: flex;
+            align-items: center;
+            margin-top: -3%;
+            align-content: center;
+            
+        }
+        .lone-cont-section section{
+            background: none;
+            width: 20%;
+            height: 20vh;
+            padding-top: 15px;
+            align-content: center;
+        }
+        .lone-cont-section img{
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            padding-top: 1px;
+            padding-left: 40%;
+        }
+        .lone-cont-section h5{
+            color: blue;
+            font-size: medium;
+            text-align: center;
+            padding-top: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .lone-cont-section h6{
+            color: gray;
+            font-size: xx-small;
+            text-align: center;
+            padding-top: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .lone-cont-section img:hover{
+            width: 60px;
+            height: 60px;
+            transition-duration: 1s;
+        }
+        .next-cont-section{
+            background-color: white;
+            /*border: 15px double white;*/
+            width: 82.3%;
+            height: 50vh;
+            margin-left: 10%;
+            margin-right: 10%;
+            justify-content: space-around;
+            display: flex;
+            margin-top: -15px;
+        }
+        .next-cont-section section{
+            width: 40%;
+            height: 50vh;
+            padding-top: 5px;
+            /*align-items: center;*/
+            
+        }
+        .next-cont-section img{
+            width: 100%;
+            height: 300px;
+            margin-top: none;
+        }
+        .next-cont-section h1{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: large;
+            padding-top: 70px;
+            text-align: left;
+            margin-left: -2px;
+            -webkit-text-stroke: 1.5px blue;
+        }
+        .love{
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 15px;
+            text-align: left;
+            padding-top: 5px;
+            margin-left: -2px;
+        }
+        .like{
+            color: rgb(199, 207, 206);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 15px;
+            text-align: justify;
+            padding-top: 20px;
+        }
+        /*.like:hover{
+            color: rgb(199, 207, 206);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+            text-align: justify;
+            padding-top: 20px;
+            transition-duration: 1s;
+        }*/
+        .next-cont-section button{
+            background-color: blue;
+            color: white;
+            width: 100px;
+            height: 50px;
+            margin:20px;
+            margin-left: -2px;
+            font-weight: bolder;
+        }
+        .next-cont-section button:hover{
+            background-color: green;
+            color: white;
+            transition-duration: 0s;
+        }
+        .last-cont-section{
+            background-color: white;
+            /*border: 15px double white;*/
+            width: 82.3%;
+            height: 30vh;
+            margin-left: 10%;
+            margin-right: 10%;
+            justify-content: space-around;
+            display: flex;
+            margin-top: 50px;
+        }
+        .last-cont-section section{
+            width: 40%;
+            height: 30vh;
+            padding-top: 5px;
+            /*align-items: center;*/
+        }
+        .last-cont-section img{
+            width:100%;
+            height: 100px;
+            margin-left: -40px;          
+        }
+        .date{
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            font-weight: bolder;
+            -webkit-text-stroke: 1px black;         
+        }
+        .tolu{
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 15px;
+            text-align: justify;
+            padding-top: 20px;
+            } 
+        .covey{
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 10px;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="whole-cont-section">
+        
+        <h2>
+                Contact_info:-@fbmci.edu____08069293705  Alumni Calendar  Portal 
+        <button>
+                Support FCBM
+        </button>          
+        </h2> 
+        <div>
+            <img src="model.png"></img>
+             
+            <h3>
+                <a href="">Pages</a>    <a href="">Academics</a>   
+                <a href="">Admissions</a>  <a href="">Courses</a> <a href="">Athletics</a>   
+                <a href="">School-Life</a>                  
+            </h3>   
+        </div>
+    <section class="image-container">
+        <img src="girl.jpg" alt="Image">
+        <text class="text-overlay">
+        <p class="small">
+            The Best School Of The State        
+        </p>
+        <h4 class="big">
+            FIRST BAPTIST MODEL SCHOOLS AND COLLEGE
+        </h4>
+        <button>Take A Tour</button>
+        </text>
+    </section>
+    <section class="lone-section">
+    <section class="lone-cont-section">
+        <section>
+            <img src="uni.png">
+            </img>
+            <h5>
+                University Life
+            </h5>
+            <h6>
+                 Overall in here
+            </h6>
+        </section>
+        <section>
+            <img src="GRAD.png">
+            </img>
+            <h5>
+                Graduation
+            </h5>
+            <h6>
+                Getting Diploma
+            </h6>
+        </section>
+        <section>
+            <img src="athlete.png">
+            </img>
+            <h5>
+                Athletics
+            </h5>
+            <h6>
+                Sport Clubs
+            </h6>
+        </section>
+        <section>
+            <img src="social.png">
+            </img>
+            <h5>
+                Social
+            </h5>
+            <h6>
+                Overall in here
+            </h6>
+        </section>
+    </section>
+    </section>
+    <section class="next-cont-section">
+        <section>
+            <img src="images.jpg"></img>
+        </section>
+        <section>
+            <h1>
+                Apply For Admission
+            </h1>
+            <p class="love">
+                FBMC 2026 application is now open
+            </p>
+            <p class="like">
+                We dont just give students an education and experiences 
+                that set them up for successs in a career. 
+                We help them succeed in their career----
+                to discover a field they are passionate about and dare to lead it.
+            </p>
+           <button>
+                Apply Now
+            </button>
+        </section>   
+    </section> 
+    <section class="last-cont-section">
+        <section>
+            <img src="model.png">
+            <p class="date">
+                About Our School
+            </p>
+            </img>
+        </section>
+        <section>
+            <p class="tolu">
+                We are one of the largest, most diverse school in the State with over 100 students in Otu, 
+                and a further 50 studying across 7 towns for First Baptist Model Schools and College. 
+                First Baptist Model Schools and College, Otu was established by the Church (First Baptist Church, Otu) 
+                in 1992 for public benefit and it is recommended globally.
+                Our aim is just like our motto which is "Education For Brighter Future."
+                We aim to use education pave a shiny way for our pupils.
+            </p>
+        </section>
+    </section>
+            <p class="covey">
+                &copy Copyright AdeCovenant 13/04/2025
+            </p>     
+    </section>   
+</body>
+</html>

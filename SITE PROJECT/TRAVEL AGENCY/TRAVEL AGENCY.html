@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL AGENCY</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        margin-top: 0.5%;
+    }
+    .first section{
+        background-color: white;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .first-cont section{
+        width: 45%;
+        height: 7vh;
+    }
+    .first section img{
+        width: 20%;
+        height: 4vh;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    .first section h1{
+        font-size: medium;
+        font-weight: 900;
+        font-family: sans-serif;
+        font-size: small;
+        word-spacing: 50px;
+        text-justify: inter-word;
+        float: right;
+        margin-right: 20%;
+        margin-top: 2%;
+    }
+    .first section a{
+        text-decoration: none;
+        color: black;
+    }
+    .first section button{
+        background-color: #ff4500;
+        border-color: #ff4500;
+        border-radius: 15px 15px 15px 15px;
+        width: 20%;
+        height: 5vh;
+        color: white;
+        font-family: sans-serif;
+        font-size: smaller;
+        font-weight: 500;
+        margin-top: 1%;
+        margin-left: 40%;
+    }
+    .second section{
+        width: 100%;
+        height: 90%;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0%;
+    }
+    .second-cont section{
+        width: 45%;
+        height: 90vh;
+    }
+    .second section img{
+        width: 80%;
+        height: 80vh;
+        margin-top: 5%;
+        border-radius: 15px 15px 15px 15px;
+    }
+    .second section h1{
+        color: black;
+        font-weight: bolder;
+        font-size: 60px;
+        font-family: sans-serif;
+        margin-top: 10%;
+    }
+    .second section h2{
+        color: black;
+        font-weight: bolder;
+        font-size: 60px;
+        font-family: sans-serif;
+        margin-top: 20%;
+        margin-left: -75%;
+    }
+    .second section h3{
+        font-size: medium;
+        font-weight: 900;
+        font-family: sans-serif;
+        font-size: 13px;
+        word-spacing: 210px;
+        text-justify: inter-word;
+        float: right;
+        margin-top: 45%;
+        margin-left: -70%;
+    }
+    .second section h4{
+        font-size: medium;
+        font-weight: 900;
+        font-family: sans-serif;
+        font-size: 13px;
+        word-spacing: 210px;
+        text-justify: inter-word;
+        float: right;
+        margin-top: 60%;
+        margin-left: -73%;
+    }
+     .input-field{
+        background-color: white;
+        border-color:#ff4500;
+        border-radius: 15px;
+        height: 5vh;
+        width: 25%;
+        border-width: 1px;
+        margin-top: 50%;
+        margin-left: -70%;
+    }
+    ::placeholder{
+        color: grey;
+        font-family: sans-serif;
+        font-size: small;
+        font-weight: bold;
+        padding-left: 5px;
+    }
+    .input-button{
+        background-color: #ff4500;
+        border-color:#ff4500;
+        border-radius: 15px 15px 15px 15px;
+        width: 30%;
+        height: 6vh;
+        padding: 5px 5px;
+        margin-top: 80%;
+        margin-left: -50%;
+    }
+    .third section{
+        background-color: none;
+        width: 99%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        margin: 1%;   
+    }
+    .third-cont section{
+        width: 18%;
+        height: 50vh;
+    }
+    /*.third section img{
+        width: 100%;
+        height: 47vh;
+        border-radius: 15px 15px 15px 15px;
+    }*/
+    .image-container{
+        position: absolute;
+    }
+    .image-container img{
+        width: 100%;
+        height: 47vh;
+        border-radius: 15px 15px 15px 15px;
+    }
+    .text-overlay{
+        position: absolute;
+        top: 65%;
+        left: 13.9%;
+        transform: -50%, -50%;
+    }
+    .text-overlay div{
+        background-color: white;
+        width: 110%;
+        height: 12vh;
+        border-radius: 15px 15px 15px 15px;
+        margin-top: -1%;
+    }
+    .text-overlay h1{
+        color: black;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: large;
+        text-align: center;
+        padding-top: 7%;
+    }
+    .text-overlay h2{
+        color: black;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: small;
+        padding-left: 4%;
+        padding-top: 5%;
+    }
+    /*video{
+        width: 80%;
+        height: 50vh;
+        margin-top: 35%;
+        margin-left: 10%;
+        border-radius: 15px 15px 15px 15px;
+        border: 2px black;
+    }*/
+    .video-wrapper {
+        width: 90%;      /* Desired cropped width */
+        height: 50vh;     /* Desired cropped height */
+        overflow: hidden;  /* Hide the rest */
+        position: relative;
+        margin-top: 30%;
+        margin-left: 10%;
+    }
+    .video-cropped {
+        position: absolute;
+        top: -50px;        /* Shift to crop top part */
+        left: -100px;      /* Shift to crop left part */
+        width: 90%;      /* Make sure video is large enough */
+        height: 50vh;
+    }
+  .fourth section{
+        background-color: rgb(235, 229, 232);
+        border-radius: 50px;
+        width: 80%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    .fourth-cont section{
+        background-color: white;
+        width: 17.33%;
+        height: 8vh;
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+    .fourth-cont section :hover{
+        background-color: #ff4500;
+        border-radius: 50px;
+        color: white;
+    }
+    .fourth section h4{
+        font-family: sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        padding: 15px;
+    }
+    /*.fifth section{
+        background-color: none;
+        width: 99%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        margin: 1%;   
+    }
+    .fifth-cont section{
+        width: 18%;
+        height: 50vh;
+    }
+     .sixth section{
+        background-color: none;
+        width: 99%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 11%;  
+    }
+    .sixth-cont section{
+        width: 18%;
+        height: 50vh;
+    }*/
+    button{
+        background-color: #ff4500;
+        border-color: #ff4500;
+        border-radius: 15px 15px 15px 15px;
+        width: 8%;
+        height: 6vh;
+        color: white;
+        font-family: sans-serif;
+        font-size: smaller;
+        font-weight: 500;
+        margin-top: 27%;
+        margin-left: 45%;
+    }
+    .fifth section{
+        background-color: none;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: space-evenly;
+         
+    }
+    .fifth-cont section{
+        width: 18%;
+        height: 40vh;
+        background-color: rgb(238, 230, 230);
+        border-radius: 15px;
+    }
+    .fifth section img{
+        width: 30%;
+        height: 10vh;
+        margin-left: 8%;
+        margin-top: 8%;
+        border-radius: 50px;
+    }
+    .fifth section h1{
+        font-size: 15px;
+        font-family: sans-serif;
+        margin-top: 15%;
+        padding-left: 3%;
+        font-weight: bolder;
+    }
+    .fifth section h2{
+        font-size: 10px;
+        font-family: sans-serif;
+        margin-top: 22%;
+        margin-left: -55%;
+        font-weight: 700;
+    }
+    .fifth section h3{
+        font-family: sans-serif;
+        font-size: smaller;
+        text-align: justify;
+        margin-top: 40%;
+        margin-left: -75%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .sixth section{
+        background-color: none;
+        width: 80%;
+        height: 50vh;
+        margin-top: 3%;
+        margin-left: 7%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sixth-cont section{
+        width: 25%;
+        height: 50vh;
+        margin-top: 0%;
+    }
+    .sixth section img{
+        width: 100%;
+        height: 50vh;
+        border-radius: 15px;
+    }
+    .sixth section text-overlay{
+        position: absolute;
+        top: 65%;
+        left: 13.9%;
+        transform: -50%, -50%;
+    }
+    .text-overlay h3{
+        font-family: sans-serif;
+        font-size: medium;
+        margin-top: 1380%;
+        text-align: center;
+        color: white;
+        margin-left: -35%;
+    }
+    .text-overlay h4{
+        font-family: sans-serif;
+        font-size: small;
+        margin-top: 5%;
+        text-align: center;
+        color: white;
+        padding-right: -1%;
+    }
+    .seventh section{
+        background-color: none;
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 7%;
+        border-radius: 15px;
+    }
+    .seventh-cont section{
+        background-color: none;
+        width: 40%;
+        height: 50vh;
+        margin-top: 0%;
+        border-radius: 15px;
+    }
+    .seventh section img{
+        width: 100%;
+        height: 50vh;
+        border-radius: 15px;
+        margin: 0%;
+    }
+    .seventh section h1{
+        font-size: 35px;
+        font-family: sans-serif;
+        margin-top: 15%;
+        margin-left: -2%;
+        font-weight: bolder;
+    }
+    .seventh section h2{
+        font-size: 10px;
+        font-family: sans-serif;
+        margin-top: 22%;
+        margin-left: -55%;
+        font-weight: 700;
+    }
+    .seventh section button{
+        background-color: #ff4500;
+        border-color: #ff4500;
+        border-radius: 15px 15px 15px 15px;
+        width: 50%;
+        height: 6vh;
+        color: white;
+        font-family: sans-serif;
+        font-size: smaller;
+        font-weight: 500;
+        margin-top: 40%;
+        margin-left: -70%;
+    }
+    .eighth section{
+        background-color: rgb(2, 15, 74);
+        width: 100%;
+        height: 40vh;
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .eighth-cont section{
+        background-color: none;
+        width: 30%;
+        height: 40vh;
+        margin-top: 0%;
+    }
+    .eighth section img{
+        width: 50%;
+        height: 7vh;
+        margin-top: 20%;
+        margin-left: 35%;
+    }
+    .eighth section h1{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        margin-left: -46%;
+        margin-top: 15%;
+    }
+    .input-field1{
+        background-color: transparent;
+        color: white;
+        border-color: blue;
+        height: 5vh;
+        width: 50%;
+        border-radius: 25px;
+        margin-top: 30%;
+        margin-left: -190%;
+    }
+    ::placeholder{
+        color: grey;
+        font-family: sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .eighth section button{
+        background-color: #ff4500;
+        border-color: #ff4500;
+        border-radius: 25px;
+        width: 7%;
+        height: 4.5vh;
+        color: white;
+        font-family: sans-serif;
+        font-size: smaller;
+        font-weight: 500;
+        margin-top: 31%;
+        margin-left: -101%;
+        padding-left: 3px;
+    }
+    ul{
+        list-style-type: none;
+        color: grey;
+        font-family: sans-serif;
+        font-size: small;
+        margin-top: 15%;
+    }
+</style>
+<body>
+    <section class="first section">
+        <section class="first-cont section">
+            <section>
+                <img src="Logo2.png">
+                </img>
+                <h1>
+                    <a href="">Travelers</a> <a href="">Visa</a> <a href="">Blog</a>
+                </h1>
+            </section>
+            <section>
+                <button>List Your Places</button>
+            </section>
+        </section>
+    </section>
+    <section class="second section">
+        <section class="second-cont section">
+            <section>
+                <h1>
+                    Life is short,
+                </h1>
+                <h2>
+                    the world is wide
+                </h2>
+                <h3>
+                    Location Check-In
+                </h3>
+                <h4>
+                    Travelers Check-Out 
+                </h4>
+                 <button class="input-button">
+                    Search Now
+                </button>
+                <input class="input-field" required placeholder="Where are you going?"/>
+                <input class="input-field" input type="date" style="margin-left: 5%;" required placeholder="Where are you going?"/>
+                <input class="input-field" style="margin-top: 65%; margin-left: -85%;" required placeholder="Travelers"/>
+                <input class="input-field" input type="date" style="margin-top: 65%; margin-left: 5%;" required placeholder=""/>              
+            </section>
+            <section>
+                <img src="FOURTEEN2.jpeg">
+                </img>
+            </section>
+        </section>
+    </section>
+    <p style="color: black; font-family: sans-serif; font-weight: bolder; font-size: xx-large; margin-left: 12%; margin-top: 7%;">
+        Popular Places
+    </p>
+    <section class="image-container">
+    <section class="third section">
+        <section class="third-cont section">
+            <section>
+                <img src="ONE.jpeg"/>
+                <text class="text-overlay">
+                    <div>
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                    </text>
+            </section>
+            <section>
+                <img src="TWO.jpg"/>
+                <text class="text-overlay">
+                    <div style="margin-left: 170%;">
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+            <section>
+                <img src="SIX.jpg"/>
+                <text class="text-overlay">
+                    <div style="margin-left: 330%;">
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+            <section>
+                <img src="FOURTEEN2.jpeg"/>
+                <text class="text-overlay">
+                    <div style="margin-left: 495%;">
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+        </section>
+    </section>
+    </section>
+    <div class="video-wrapper">
+    <video class="video-cropped" style="margin-left: 7%;" controls muted>
+      <source src="Ocean Waves Background Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    <p style="font-family: sans-serif; font-size: 40px; font-weight: bolder; text-align: center; margin-top: 10%;">
+        Go anywhere
+    </p>
+    <p style="font-family: sans-serif; font-size: 40px; font-weight: bolder; text-align: center; margin-top: 0%;">
+        with our latest e-Tour offers
+    </p>
+    <section class="fourth section">
+        <section class="fourth-cont section">
+            <section>
+                <h4>
+                    Flights
+                </h4>
+            </section>
+            <section>
+                <h4>
+                    Hotels
+                </h4>
+            </section>
+            <section>
+                <h4>
+                    Cruise
+                </h4>
+            </section>
+            <section>
+                <h4 style="margin-left: -1%;">
+                    Ur Tour
+                </h4>
+            </section>
+            <section>
+                <h4>
+                    Ur Car
+                </h4>
+            </section>
+        </section>
+    </section>
+   <section class="image-container">
+    <section class="third section">
+        <section class="third-cont section">
+            <section>
+                <img src="FOUR.jpg"/>
+                <text class="text-overlay">
+                    <div>
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+            <section>
+                <img src="FIFTEEN.jpg"/>
+                <text class="text-overlay">
+                    <div style="margin-left: 170%;">
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+            <section>
+                <img src="TEN.jpeg"/>
+                <text class="text-overlay">
+                    <div style="margin-left: 330%;">
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+            <section>
+                <img src="FOURTEEN2.jpeg"/>
+                <text class="text-overlay">
+                    <div style="margin-left: 495%;">
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+        </section>
+    </section>
+    </section>
+    <br/><br/><br/><br/><br/><br/><br/><br/>v<br/><br/><br/><br/>v<br/><br/><br/><br/><br/><br/>
+    <section class="image-container">
+    <section class="third section">
+        <section class="third-cont section">
+            <section>
+                <img src="SIXTEEN.jpg"/>
+                <text class="text-overlay">
+                    <div>
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                    </text>
+            </section>
+            <section>
+                <img src="EIGHT.jpeg"/>
+                <text class="text-overlay">
+                    <div style="margin-left: 170%;">
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+            <section>
+                <img src="FIVE.jpg"/>
+                <text class="text-overlay">
+                    <div style="margin-left: 330%;">
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+            <section>
+                <img src="NINE.jpg"/>
+                <text class="text-overlay">
+                    <div style="margin-left: 495%;">
+                        <h1>
+                            Nusa Penida Island
+                        </h1>
+                        <h2>
+                            Carlifornia, USA
+                        </h2>
+                    </div>
+                </text>
+            </section>
+        </section>
+    </section>
+    </section>
+    <button>
+        View All Places
+    </button>
+    <p style="color: black; font-family: sans-serif; font-weight: bolder; font-size: xx-large; margin-left: 12%; margin-top: 7%;">
+        Clients' Testimonies
+    </p>
+    <section class="fifth section">
+        <section class="fifth-cont section">
+            <section>
+                <img src="ME.jpg"/>
+                <h1>
+                    Adesina 
+                </h1>
+                <h1>
+                    Covenant
+                </h1>
+                <h2>
+                    Frontend
+                </h2>
+                <h2 style="margin-left: 2%; font-weight: bold;">
+                    Developer
+                </h2>
+                <h3>
+                    This has been the BEST platform for reviews. 
+                    It is the easiest to use, integrates seamlessly and your email updates provide incredible value. 
+                    Today getting the email regarding fake reviews was so important as I would have never of known to check without it. 
+                </h3>
+            </section>
+            <section>
+                <img src="DESSIE.jpg"/>
+                <h1>
+                    Adesina 
+                </h1>
+                <h1>
+                    Desmond
+                </h1>
+                <h2>
+                    Frontend
+                </h2>
+                <h2 style="margin-left: 2%; font-weight: bold;">
+                    Developer
+                </h2>
+                <h3 style="margin-left: -80%;">
+                    This has been the BEST platform for reviews. 
+                    It is the easiest to use, integrates seamlessly and your email updates provide incredible value. 
+                    Today getting the email regarding fake reviews was so important as I would have never of known to check without it. 
+                </h3>
+            </section>
+            <section>
+                <img src="GAIUS.jpg"/>
+                <h1>
+                    Jokanola 
+                </h1>
+                <h1>
+                    Gaius
+                </h1>
+                <h2 style="margin-left: -47%;">
+                    Frontend
+                </h2>
+                <h2 style="margin-left: 3%; font-weight: bold;">
+                    Developer
+                </h2>
+                <h3 style="margin-left: -78%;">
+                    This has been the BEST platform for reviews. 
+                    It is the easiest to use, integrates seamlessly and your email updates provide incredible value. 
+                    Today getting the email regarding fake reviews was so important as I would have never of known to check without it. 
+                </h3>
+            </section>
+            <section>
+                <img src="TAIWO.jpg"/>
+                <h1>
+                    Adesina 
+                </h1>
+                <h1>
+                    Promise
+                </h1>
+                <h2 style="margin-left: -50%;">
+                    Nurse
+                </h2>
+                <h3 style="margin-left: -50%;">
+                    This has been the BEST platform for reviews. 
+                    It is the easiest to use, integrates seamlessly and your email updates provide incredible value. 
+                    Today getting the email regarding fake reviews was so important as I would have never of known to check without it. 
+                </h3>
+            </section>
+            <section>
+                <img src="KENNY.jpg"/>
+                <h1>
+                    Adesina 
+                </h1>
+                <h1>
+                    Heritage
+                </h1>
+                <h2>
+                    Laboratory
+                </h2>
+                <h2 style="margin-left: 2%; font-weight: bold;">
+                    Technician
+                </h2>
+                <h3 style="margin-left: -80%;">
+                    This has been the BEST platform for reviews. 
+                    It is the easiest to use, integrates seamlessly and your email updates provide incredible value. 
+                    Today getting the email regarding fake reviews was so important as I would have never of known to check without it. 
+                </h3>
+            </section>
+        </section>
+    </section>
+    <p style="color: black; font-family: sans-serif; font-weight: bolder; font-size: xx-large; margin-left: 13%; margin-top: 7%;">
+        Our Latest Blogs
+    </p>
+    <section class="sixth section">
+        <section class="sixth-cont section">
+            <section>
+                <img src="TWELVE.jpg"/>
+                <text class="text-overlay">
+                     <h3>
+                        Product Designer
+                    </h3>
+                    <h4>
+                        Our clients said about our services
+                    </h4>
+                </text> 
+            </section>
+            <section>
+                <img src="TEN.jpeg"/>
+            </section>
+            <section>
+                <img src="ONE.jpeg"/>
+            </section>
+        </section>
+    </section>
+    <section class="seventh section">
+        <section class="seventh-cont section">
+            <section>
+                <img src="ONE.jpeg"/>
+            </section>
+            <section style="margin-left: 1%;">
+                <h1>
+                    Book a ticket & just leave
+                </h1>
+                <button>
+                    Book Now
+                </button>
+            </section>
+        </section>
+    </section>
+    <section class="eighth section">
+        <section class="eighth-cont section">
+           <section>
+                <img src="Logo2.png"/>
+           </section>
+           <section>
+                <ul>
+                    <li style="font-size: large; font-weight: bolder; color: white;">
+                        Support
+                    </li>
+                    <li style="padding-top: 10px;">
+                        License
+                    </li>
+                    <li style="padding-top: 10px;">
+                        Refund Policy
+                    </li>
+                    <li style="padding-top: 10px;">
+                        About Us
+                    </li>
+                    <li style="padding-top: 10px;">
+                        Contacts
+                    </li>
+                </ul>
+                <a href="https://www.facebook.com/profile.php?id=100085549473543">
+                    <img src="FACE2.png" style="width: 100%; height: 5vh; margin-top: 700%;"/>
+                </a>
+                <a href="https://www.instagram.com/ade_covenant?igsh=YzljYTk1ODg3Zg==">
+                    <img src="INSTA2.png" style="width: 100%; height: 5vh; margin-top: 350%; margin-left: -35%;"/>
+                </a>
+                <a href="https://wa.me/+2348163457012">
+                    <img src="WHATS2.png" style="width: 100%; height: 5vh; margin-top: 340%; margin-left: -45%;"/>
+                </a>
+           </section>
+           <section>
+                <h1>
+                    Subscribe to our Newsletter
+                </h1>
+                <input class="input-field1" input type="tel" placeholder="Enter your phone number"/>
+                <button>
+                    🔍
+                </button>
+           </section>
+        </section>
+    </section>
+    <p style="background-color: rgb(2, 15, 74); color: white; height: 5vh; font-size: medium; font-family: sans-serif; 
+    font-weight: bold; text-align: center; padding-top: 0%; margin-top: 0%;">
+        &copy AdeCovenant 24-26/05/2025
+    </p> 
+</body>
+</html>

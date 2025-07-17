@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Play It Yourself</title>
+  <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .dd{
+        position: relative;
+        display: inline-block;
+    }
+    .dd-content{
+        position: absolute;
+        display: none;
+        
+        height: 0px;
+        transition: height 1s;
+        width: 297%;
+        box-shadow: 0 18px 36px rgba(0, 0, 0, 30), 0 14px 11px rgba(0, 0, 0, 22), ;
+    }
+    .dd button{
+        background-color: brown;
+        width: 297%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .dd:hover > .dd-content{
+        height: 150px;
+        display: block;
+    }
+    a{
+        display: block;
+        padding: 13px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .nav-bar{
+        background-color: grey;
+        width: 10%;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+    ul > li > a:hover{
+        background-color: brown;
+        color: black;
+        display: block;
+        border-bottom: 5px solid red;
+    }
+    .nav-bar .active{
+        background-color: brown;
+    }
+    content{
+        margin-left: 10%;
+        width: 93%;
+        padding-left: 30px;
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        border-bottom: 1px solid black;
+    }
+    li:nth-child(5){
+        border: none;
+    }
+    .pagination{
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid blue;
+    }
+    #li{
+        display: inline;
+    }
+   
+    #li:last-child a{
+        border-right: none;
+    }
+    a:hover{
+        background-color: lightblue;
+    }
+    i{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-image: url(images/icon.png);
+        margin-bottom: -5px;
+    }
+    .input-field, textarea{
+        background-color: blue;
+        color: white;
+        padding-left: 10px;
+        border: none;
+        margin: 10%;
+    }
+    ::placeholder{
+        color: white;
+    }
+    ::placeholder:focus{
+        color: yellow;
+    }
+    .input-field:focus, textarea:focus{
+        background-color: rgb(12, 1, 54);
+        border-bottom: 5px solid brown;
+    }
+    select{
+        background-color: blueviolet;
+        color: white;
+        padding: 15px;
+        width: 30%;
+        margin-left: 15%;
+        margin-top: 5%;
+        border: none;
+    }
+    input[type="checkbox"], input[type="radio"] {
+        display: none;
+    }
+    label{
+        display: block;
+        width: 40%;
+        padding: 5px;
+        border: 1px solid blue;
+        margin-bottom: 5px;
+        border-bottom: 5px;
+        margin-left: 15%;
+    }
+    label span{
+        display: inline-block;
+        width: 15px;
+        height: 2.5vh;
+        border: 3px solid blue;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+        background-color: green;
+        color: white;
+    }
+    input[type="checkbox"]:checked + label > span, input[type="radio"]:checked + label > span {
+        background-color: blue;
+    }
+  </style>
+</head>
+<body>
+     <section class="nav-bar">
+         <ul>
+            <li><a href="#" class="active">MENU</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">ARTICLE</a></li>
+            <li><a href="#">GALLERY</a></li>
+        </ul>
+    </section>
+    <content>          
+    <form>
+        <input type="checkbox" name="orange" value="Orange" id="orange"/>
+        <label for="orange"><span></span>Orange</label>
+        <input type="checkbox" name="apple" value="Apple" id="apple"/>
+        <label for="apple"><span></span>Apple</label>
+        <input type="checkbox" name="mango" value="Mango" id="mango"/>
+        <label for="mango"><span></span>Mango</label>
+    </form>
+    <p style="color: red; margin-left: 15%; margin-top: 5%;">CHOOSE</p>
+    <form>
+        <input type="radio" name="person" value="Mark" id="mark"/>
+        <label for="mark"><span></span>MArk</label>
+        <input type="radio" name="person" value="John" id="john"/>
+        <label for="john"><span></span>John</label>
+        <input type="radio" name="person" value="Luke" id="luke"/>
+        <label for="luke"><span></span>Luke</label>
+    </form>
+    </content>
+</body>
+</html>

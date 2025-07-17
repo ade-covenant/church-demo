@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+<style>
+    .whole-section{
+        background-color: rgb(242, 219, 229);
+        width: 100%;
+        height: 350vh;
+        margin: none;
+    }
+    /*.first-section{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }*/
+    .first-section img{
+        width:70%;
+        height: 70vh;   
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+    .first-section button{
+        background-color: red;
+        border-radius: 30px;
+        border-color: red;
+        color: white;
+        font-size: small;
+        width: 30%;
+        height: 7vh;
+        margin-left: 120px;
+        /*margin-top: 30%;*/
+    }
+    .first-section button:hover{
+        background-color: white;
+        border-color: red;
+        color: red;
+        transition-duration: none;
+    }
+    .first-2nd-section button{
+        background-color: white;
+        color: rgb(241, 11, 11);
+        font-size: small;
+        width: 70%;
+        height: 7vh;
+        text-align: center;       
+    }
+    .first-2nd-section button:hover{
+        background-color: rgb(255, 0, 0);
+        border-color: red;
+        color: white;
+        transition-duration: none;
+    }
+    .first-into2-cont-section{  
+        background-color: none;
+        width: 80%;
+        height: 20vh;
+        justify-content: space-around;
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: -25px;
+    }
+    .first-into2-cont-section section{
+        width: 40%;
+        height: 20vh;
+        background-color: none;
+        color: none;
+        align-content: center;
+        text-align: center;       
+    }
+    .second-cont-section{
+        background-color: rgb(235, 229, 232);
+        border-radius: 50px;
+        width: 80%;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    .second-cont-section section{
+        width: 13.33%;
+        height: 15vh;
+        align-content: center;
+        text-align: center;
+    }
+    .second-cont-section img{
+        width: 50px;
+        height: 10vh;
+    }
+    .second-cont-section h2{
+        color: black;
+        font-size: small;
+        margin-top: -5px;
+    }
+    .third-cont section{
+        background: none;
+        width: 90%;
+        height: 40vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 80px;
+        justify-content: space-around;
+        display: flex;
+        align-content: center;
+        align-items: center;
+       
+        
+    }
+    .third-cont section section{
+        background-color: rgb(235, 229, 232);
+        width: 30%;
+        height: 40vh;
+        margin: none;
+        padding: none;
+    }
+    .third-cont section section img{
+        width: 50%;
+        height: 30vh;
+        margin-top: -10%;
+        margin-left: -5px;
+    }
+    .third-cont section section h3{
+        color: black;
+        font-size: medium;
+        margin-top: 80%;
+        font-family: sans-serif;
+        margin-left: -250px;
+    }
+    .forth-cont section{
+        background: none;
+        width: 90%;
+        height: 40vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 80px;
+        justify-content: space-around;
+        display: flex;
+        align-content: center;
+        align-items: center;
+       
+        
+    }
+    .forth-cont section section{
+        background-color: rgb(235, 229, 232);
+        width: 30%;
+        height: 40vh;
+        margin: none;
+        padding: none;
+    }
+    .forth-cont section section img{
+        width: 50%;
+        height: 30vh;
+        margin-top: -10%;
+        margin-left: -5px;
+    }
+    .forth-cont section section h4{
+        color: black;
+        font-size: medium;
+        margin-top: 80%;
+        font-family: sans-serif;
+        margin-left: -250px;
+    }
+    .fifth-cont section{
+        background-color: none;
+        width:90%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top:10%;
+    }
+    .fifth-cont section section{
+        background-color: rgb(235, 229, 232);
+        width: 45%;
+        height: 30vh;
+        margin-top: 2%;
+        align-content: flex-end;      
+    }
+    .fifth-cont section section img{
+        width: 50%;
+        height: 30vh;
+        margin-right: -10%;
+    }
+    .fifth-cont section section h5{
+        color: black;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: medium;
+        margin-top: -20%;
+    }
+    .tolu{
+        color: rgb(255, 0, 0);
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: medium;
+        margin-left: -50%;
+        margin-top: 2%;
+    }
+    /*.next-cont section{
+        background-color: black;
+        height: 7vh;
+        width: 100%;
+    }
+    .next-cont section section button{
+        background-color: red;
+        border-radius: 30px;
+        border-color: red;
+        color: white;
+        font-size: small;
+        width: 20%;
+        height: 7vh;
+        margin-right: 70%;
+        margin-top: 70%;
+    }*/
+    .sixth-cont section{
+        background-color: none;
+        width:80%;
+        height:50vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: -8%;
+        margin-top:10%;
+    }    
+    
+    .sixth-cont section section{
+        width: 27%;
+        height: 30vh;
+        background-color: rgb(235, 229, 232);
+        margin-top: -20%;
+    }
+    .sixth-cont section section img{
+        width: 50%;
+        height: 20vh;
+        margin-top: -10%;
+    }
+    .covey{
+        font-size: medium;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-top: 55%;
+        margin-left: -45%;
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <section class="whole-section">
+        <section class="first-section">
+            <img src="burger.png">
+            </img>
+            <section class="first-into2-section">
+                <section class="first-into2-cont-section">
+                    <section>
+                        <button>
+                            Order Now
+                        </button>
+                    </section>
+                    <section>
+                        <section class="first-2nd-section">
+                            <button>
+                                 View Menu
+                            </button>
+                        </section>
+                    </section>
+                </section>
+            </section>
+           
+        </section>
+        <section class="second-cont-section">
+            <section>
+                <img src="big burger.png">
+                </img>
+                <h2>BURGER</h2>
+            </section>
+            <section>
+                <img src="chicken.png">
+                </img>
+                <h2>
+                    CHICKEN
+                </h2>
+            </section>
+            <section>
+                <img src="pizza.png">
+                </img>
+                <h2>
+                    PIZZA
+                </h2>
+            </section>
+            <section>
+                <img src="salad.png">
+                </img>
+                <h2>
+                    SALAD
+                </h2>
+            </section>
+            <section>
+                <img src="nice fries.png">
+                </img>
+                <h2>
+                    FRENCH FRIES
+                </h2>
+            </section>
+            <section>
+                <img src="drink.png">
+                </img>
+                <h2>
+                    DRINKS
+                </h2>
+            </section>
+        </section>
+        <section class="third-cont section">
+            <section class="third-cont section section">
+                <section>
+                    <img src="fries.png">
+                    </img>
+                    <h3>
+                        Golden French Fries
+                    </h3>
+                </section>
+                <section>
+                    <img src="dubai.png">
+                    </img>
+                    <h3>
+                        McDonald's-Dubai
+                    </h3>
+                </section>
+                <section>
+                    <img src="burger fries.png">
+                    </img>
+                    <h3>
+                        Burger French Fries
+                    </h3>
+                </section>
+            </section>
+        </section>
+        <section class="forth-cont section">
+            <section class="forth-cont section section">
+                <section>
+                    <img src="big burger.png">
+                    </img>
+                    <h4>
+                        Spicey Chicke Burger
+                    </h4>
+                </section>
+                <section>
+                    <img src="combo.png">
+                    </img>
+                    <h4>
+                        Combo Package v1
+                    </h4>
+                </section>
+                <section>
+                    <img src="mcdonalds.png">
+                    </img>
+                    <h4>
+                        McDonalds deal
+                    </h4>
+                </section>
+            </section>
+        </section>
+        <section class="fifth-cont section">
+            <section class="fifth-cont section">
+                <section class="fifth-cont section section">
+                    <h5>
+                        McDonald's-Dubai
+                    </h5>        
+                    <p class="tolu">
+                        Total Cost= $87.99
+                    </p>               
+                    <img src="burger.png">
+                    </img>     
+                </section>
+                <section>
+                    <h5>
+                        McDonald's-Italy
+                    </h5>
+                        <p class="tolu">
+                            Total Cost= $77.99
+                        </p>
+                    <img src="burger.png">
+                    </img>
+                </section>
+            </section>
+            <button style="background-color: red; color: white; width: 10%; height: 7vh; border-color: red; 
+                             border-radius: 30px; margin-top: -2%; margin-left: 20%;">
+                Order Now
+            </button>
+            <button style="background-color: red; color: white; width: 10%; height: 7vh; border-color: red; 
+            border-radius: 30px; margin-top: -50px; margin-left: 65%;">
+                Order Now
+            </button>
+        </section>
+        <section class="sixth-cont section">
+            <section class="sixth-cont section section">
+                <section>
+                    <img src="cards.png">
+                    </img>
+                    <p class="covey">
+                        Accept Cards
+                    </p>
+                </section>
+                <section>
+                    <img src="book online.png">
+                    </img>
+                    <p class="covey">
+                        Online Booking
+                    </p>
+                </section>
+                <section>
+                    <img src="truck.png">
+                    </img>
+                    <p class="covey">
+                        Home Delivery
+                    </p>
+                </section>
+                <section>
+                    <img src="location.png">
+                    </img>
+                    <p class="covey">
+                        Best Location
+                    </p>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

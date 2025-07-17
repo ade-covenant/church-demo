@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video-wrapper {
+      width: 400px;      /* Desired cropped width */
+      height: 300px;     /* Desired cropped height */
+      overflow: hidden;  /* Hide the rest */
+      position: relative;
+    }
+
+    .video-cropped {
+      position: absolute;
+      top: -50px;        /* Shift to crop top part */
+      left: 10px;      /* Shift to crop left part */
+      width: 500%;      /* Make sure video is large enough */
+      height: 70vh;
+    }
+    </style>
+</head>
+<body>
+    <div class="video-wrapper">
+    <video class="video-cropped" controls muted>
+      <source src="Ocean Waves Background Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+</html>

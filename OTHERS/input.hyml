@@ -1,0 +1,10 @@
+<HTML>
+<HEAD><TITLE>ASP Application</TITLE></HEAD>
+<BODY BGCOLOR=white>
+<P>You typed:
+<NAME=REQUEST.FORM("username")
+RESPONSE.WRITE(NAME)>
+</P>
+</BODY>
+</HTML>
+
