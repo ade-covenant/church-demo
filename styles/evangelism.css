@@ -1,0 +1,525 @@
+*{
+    margin: 0%;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 5vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0rem;
+}
+
+header img{
+    width: 2.5%;
+    padding-right: 0rem;
+    padding-left: 1rem;
+}
+
+header p{
+    color: white;
+    font-size: medium;
+}
+
+nav-bar{
+    width: 97.55%;
+    height: 10vh;
+    background-color: rgb(83, 73, 175);
+    padding: 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    z-index: 100;
+}
+
+nav-bar img{
+    width: 9%;
+}
+
+.p2{
+    word-spacing: normal;
+    text-justify: inter-word;
+    color: grey;
+    font-size: medium;
+}
+.active{
+    background-color: rgba(173, 216, 230, 0.539);
+    color: white;
+    padding: 0.5rem;
+}
+.p2-one {
+    position: relative;
+    display: inline-block;
+    color: black;
+    z-index: 10;
+    margin-right: -1%;
+    padding-bottom: 0.1rem;
+}
+
+.p2-one-content {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 7px 21px rgba(0, 0, 0, 0.2);
+    width: max-content;
+    display: none;
+    z-index: 10;
+    transition: height 1s;
+    padding-bottom: 0.5rem;
+}
+
+.p2-one:hover .p2-one-content {
+    display: block;
+}
+
+.p2-one-content .a1 {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+    border-top: 1px solid rgb(242, 229, 229);
+    
+}
+
+.p2-one-content .a1:hover {
+    color: red;
+}
+
+.has-nested {
+    position: relative;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+.nested-content {
+    width: max-content;
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 7px 21px rgba(0, 0, 0, 0.2);
+}
+.has-nested:hover .nested-content {
+    display: block;
+}
+.p2-one::after{
+    content: "▼";
+}
+.has-nested::after {
+    content: "▶";
+    transition: transform 0.3s;
+}
+
+.has-nested:hover::after {
+    transform: rotate(90deg);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+nav-bar .first-btn{
+    background-color: rgb(11, 11, 104);
+    width: 10%;
+    height: 10vh;
+    color: white;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+nav-bar .first-btn img{
+    width: 100%;
+    height: 18vh;
+}
+
+nav-bar .first-btn:hover{
+    background-color: rgb(185, 21, 21);
+    transition-duration: 0.3s;
+}
+
+
+.image-container{
+    width: 100%;
+    height: 70vh;
+    background-image: url(yo!.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0%;
+}
+.image-overlay {
+  width: 100%;
+  height: 71.8%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+  margin-top: 10.8%;
+}
+
+.content-overlay{
+    justify-content: center;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    color: white;
+    text-align: center;
+}
+.content-overlay > h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+.content-overlay > h2{
+    font-size: 25px;
+}
+.content-overlay > h3{
+    font-size: 25px;
+}
+
+.btn{
+    display: inline;
+    padding: 1.5rem;
+    color: white;
+    font-size: medium;
+    border: none;
+    margin: 3%;
+}
+
+.first-btn{
+    background-color: red;
+}
+.second-btn{
+    background-color: white;
+    color: black;
+}
+.first-btn:hover{
+    background-color: rgb(136, 44, 44);
+}
+
+.second-btn:hover{
+    background-color: rgb(76, 62, 62);
+    color: white;
+}
+
+.next section{
+    /*background-color: rgb(193, 234, 220);*/
+    background: none;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.next-cont section{
+    width: 50%;
+    height: 90vh;
+    display: block;
+    margin: 0%;
+}
+.next-cont section > h2{
+    font-size: 18px;
+    color: blue;
+    text-align: justify;
+    font-weight: normal;
+    padding: 1rem 2rem 0rem 3rem;
+}
+
+.next-cont section > h1{
+    font-size: 40px;
+    color: blue;
+    text-align: left;
+    font-weight: bold;
+    padding: 1rem 2rem 0rem 3rem;
+}
+.next-cont section > h3{
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+    padding: 1rem 2rem 0rem 3rem;
+}
+
+.next-cont section #li3{
+    padding-top: 0rem;
+}
+
+.next-cont section #li2{
+    padding-top: 0rem;
+    color: black;
+}
+
+.next-cont section #li4{
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: none;
+    padding-top: 1rem;
+    color: blue;
+}
+
+.next-cont section #li1{
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: none;
+    padding-top: 5rem;
+    color: black;
+}
+
+.next-cont section #ul1, #li3, #li4{
+    list-style-type: none;
+    color: blue;
+}
+
+.next-cont section #ul1{
+    color: blue;
+}
+
+.img4{
+    width: 50%;
+    padding-top: 0rem;
+    padding-left: 10rem;
+}
+
+.next-cont section  .img6{
+    width: 50%;
+    padding: 0rem;
+    background-color: brown;
+    border-radius: 50%;
+    margin-left: 65%;
+    margin-top: 10%;
+}
+
+div{
+    column-count: 2;
+    height: 50vh;
+    padding-right: 7rem;
+}
+#image-container1{
+    width: 38%;
+    height: 40vh;
+    margin: 0%;
+    display: inline;
+    padding: 2rem;
+    padding-right: 0rem;
+    padding-top: 1rem;
+    
+}
+#image-container1 :hover{
+    width: 50%;
+    height: 50vh;
+    transition-duration: 2s;
+}
+.img5{
+    width: 38%;
+    height: 40vh;
+    padding-top: 1rem;
+}
+
+.last section{
+    background-color: rgb(7, 7, 147);
+    height: 60vh;
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.last-cont section{
+    width: 20%;
+    height: 40vh;
+    margin: 0% 2%;
+}
+.last-cont section > img{
+    width: 95%;
+    height: 35vh;
+    margin-top: 20%;
+}
+ul li, .a{
+    padding-top: 1rem;
+    color: gray;
+    font-size: 15px;
+}
+ul, li{
+    list-style-type: none;
+}
+ul{
+    margin-left: 0%;
+    margin-top: 10%;
+}
+
+.a{
+    text-decoration: none;
+}
+.a:hover{
+    color: red;
+    text-decoration: none;
+}
+#li{
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+button{
+    background-color: rgb(102, 102, 206);
+    width: 66%;
+    height: 8vh;
+    color: white;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+button > img{
+    width: 100%;
+    height: 13vh;
+}
+
+button:hover{
+    background-color: rgb(185, 21, 21);
+    transition-duration: 0.3s;
+}
+.img{
+    width: 15%;
+    display: flex;
+    padding-left: 3rem;
+}
+.horizontal-line{
+    width: 60%;
+    border: none;
+    border-top: 1px solid grey;
+    margin-top: -8%;
+    margin-left: 20%;
+}
+#p2{
+    font-size: 15px;
+    color: grey;
+    padding: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+#a{
+    text-decoration: none;
+    color: grey;
+}
+#a:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.img3{
+    width: 20%;
+    display: inline;
+    padding: 1rem;
+}
+
+/* Existing CSS ... keep all your original code above */
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 480px) {
+  nav-bar {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.3rem; /* smaller gap */
+    height: auto;
+    overflow-x: auto; /* allow horizontal scroll if too wide */
+  }
+
+  nav-bar img {
+    width: 15%; /* shrink logo */
+  }
+
+  .p2, .p2-one, a {
+    font-size: 10px; /* smaller text */
+    word-spacing: normal;
+  }
+
+  nav-bar .first-btn {
+    width: auto;
+    height: 5vh;
+    font-size: 10px;
+    padding: 0.2rem;
+  }
+
+  .image-container {
+    height: 50vh;
+  }
+
+  .content-overlay > h1 {
+    font-size: 40px;
+  }
+
+  .content-overlay > h2 {
+    font-size: 15px;
+  }
+
+  .last section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .last-cont section {
+    width: 80%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  button {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  nav-bar {
+    gap: 1rem;
+  }
+
+  nav-bar img {
+    width: 10%;
+  }
+
+  .p2, .p2-one, a {
+    font-size: 12px;
+  }
+
+  .content-overlay > h1 {
+    font-size: 50px;
+  }
+
+  .content-overlay > h2 {
+    font-size: 18px;
+  }
+
+  .last section {
+    flex-wrap: wrap;
+  }
+
+  .last-cont section {
+    width: 40%;
+    margin: 1rem 0;
+  }
+
+  button {
+    width: 60%;
+  }
+}
+
+/* You can keep your desktop styles as is outside media queries */
