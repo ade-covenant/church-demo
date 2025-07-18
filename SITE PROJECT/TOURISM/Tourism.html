@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+<style>
+    *{
+        margin: 0%;
+    }
+    header{
+        width: 100%;
+        height: 8vh;
+        background-color: white;
+        margin-top: 0%;
+    }
+    header img{
+        width: 8%;
+        height: 4vh;
+        margin-top: 1%;
+        margin-left: 10%;
+    }
+    button{
+        background-color: #00b3f9;
+        border-color: #00b3f9;
+        width: 13%;
+        height: 5vh;
+        margin-left: 85%;
+        margin-top: -20%;
+    }
+    h1{
+        font-size: medium;
+        font-weight: 900;
+        font-family: sans-serif;
+        font-size: small;
+        word-spacing: 50px;
+        text-justify: inter-word;
+        float: right;
+        margin-right: 20%;
+        margin-top: 1.5%;
+    }
+    header a{
+        color: grey;
+        text-decoration: none;
+        text-underline-offset: none;
+    }
+    .image-container{
+        position: relative;
+    }
+    .image-container img{
+        width: 100%;
+        height: 91vh;
+    }
+    .text-overlay{
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        transform: -50%, -50%;
+    }
+    .text-overlay h2{
+        color: white;
+        font-size: small;
+        font-family: sans-serif;
+        font-weight: 700;
+        margin-left: 5%;
+    }
+    .text-overlay h3{
+        color: white;
+        font-size: xx-large;
+        font-family: sans-serif;
+        font-weight: bolder;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    .small section{
+        background-color:white;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-around;
+        margin: 5%;
+    }
+    .small-cont section{
+        width: 30%;
+        height: 7vh;
+        margin-top: -0%;
+    }
+    .third section{
+        background: none;
+        width: 90%;
+        height: 75vh;
+        display: flex;
+        justify-content: space-around;
+        margin: 5%;
+    }
+    .third-cont section{
+        width: 30%;
+        height: 75%;
+        border: 1px solid rgb(245, 234, 234);
+        margin-top: 5%;
+    }
+    .third-cont section img{
+        width: 100%;
+        height: 30vh;
+        margin-top: 0%;
+        margin-left: -34%;
+    }
+    .fourth section{
+        background: none;
+        width: 90%;
+        height: 60vh;
+        display: flex;
+        justify-content: space-around;
+        margin: 5%;
+    }
+    .fourth-cont section{
+        width: 30%;
+        height: 95%;
+        border: 1px solid rgb(245, 234, 234);
+        margin-top: -5%;
+    }
+    .fourth-cont section img{
+        width: 100%;
+        height: 30vh;
+        margin-top: 0%;
+        margin-left: -34%;
+    }
+    .input-field{
+        background-color: white;
+        height: 5vh;
+        width: 80%;
+        border-color: white;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: 200%;
+        margin-top: -15%;
+    }
+    ::placeholder{
+        color: black;
+        font-family: sans-serif;
+        font-size: small;
+        font-weight: bold;
+        padding-left: 15px;
+    }
+    .input-button{
+        background-color:#00b3f9;
+        border-color: #00b4fb;
+        border-radius: 15px 15px 15px 15px;
+        width: 30%;
+        height: 6vh;
+        padding: 5px 5px;
+        margin-right: -400%;
+        margin-left: 3%;
+        margin-top: -5%;
+    }
+    .fifth section{
+        background-color: none;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+    }
+    .fifth-cont section{
+        background-color: white;
+        width: 40%;
+        height: 40vh;
+        margin-top: -25%;
+    }
+    .fifth section img{
+        width: 30%;
+        height: 6vh;
+        margin-top: 7%;
+        margin-left: 10%;
+    }
+    .fifth section h2{
+        color: grey;
+        font-size: small;
+        margin-top: 15%;
+        margin-left: -30%;
+        margin-right: 15%;
+        text-align: justify;
+    }
+    .fifth section h3{
+        font-size: medium;
+        font-weight: 900;
+        font-family: sans-serif;
+        font-size: medium;
+        word-spacing: 120px;
+        text-justify: inter-word;
+        float: right;
+        margin-top: 7%;
+        margin-left: 7%;
+    }
+    ul{
+        color: grey;
+        list-style: none;
+        margin-left: -11%;
+        margin-top: 5%;
+        font-weight: 900;
+        font-size: small;
+         word-spacing: 140px;
+        text-justify: inter-word;
+    }
+    div{
+        background-color: #00b3f9;
+        width: 310%;
+        height: 5vh;   
+    }
+</style>
+</head>
+<body>
+    <header>
+         <img src="Logo2.png">
+        </img>
+         
+        <h1>
+            <a href="">HOME</a>  <a href="">PACKAGES</a>    <a href="">SHOP</a> 
+            <a href="">ABOUT_US</a>  <a href="">PAGES</a>   <a href="">NEWS</a>     <a href="">CONTACT</a>
+        </h1>
+    </header>
+    <section class="image-container">
+    <img src="Sea.jpg" alt="Image">
+    <text class="text-overlay">
+        <h2>
+            OUR PACKAGES
+        </h2>
+        <h3>
+            Search Your Holiday
+        </h3>
+       <section class="small section">
+            <section class="small-cont section">
+                 <section>
+                    <p style="color: black; font-weight:bold; font-family: sans-serif; font-size: small; margin-top: 30%; margin-left: 10%;">Destinations</p>
+                    <select id; style="height: 5vh; width:100%; border: 1px solid grey; margin-top: 60%; margin-left: -90%;">
+                        <option value="">All Destinations...</option>
+                        <option value="">Africa</option>
+                        <option value="">Antartica</option>
+                        <option value="">Australia</option>
+                        <option value="">Asia</option>
+                        <option value="">Europe</option>
+                        <option value="">North America</option>
+                        <option value="">South America</option>
+                    </select>
+                </section>
+                <section>
+                     <p style="color: black; font-weight:bold; font-family: sans-serif; font-size: small; margin-top: 20%; margin-left: 30%;">Date</p>
+                    <input type="datetime-local" style="height: 5vh; width:100%; border: 1px solid grey; margin-top: 40%; margin-left: -50%;">    
+                </input>
+                </section>
+                <section>
+                     <p style="color: black; font-weight:bold; font-family: sans-serif; font-size: small; margin-top: 30%; margin-left: 30%;">Budget</p>
+                    <select id; style="height: 5vh; width:100%; border: 1px solid grey; margin-top: 60%; margin-left: -60%;">
+                        <option value="">Select Budget</option>
+                        <option value="">$100-$300</option>
+                        <option value="">$300-$500</option>
+                        <option value="">$500-$1000</option>
+                        <option value="">Over $1000</option>
+                    </select>
+                </section>
+            </section>
+       </section>
+    </text>
+    <section class="third section">
+        <section class="third-cont section">
+            <section>
+                <img src="Samui.jpg">
+                </img>
+                <h4 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: medium; margin-top: 75%; margin-left: -163.5%;">
+                    Koh Samui
+                </h4>
+                <h2 style="color: grey; font-family: sans-serif; font-weight: bolder; font-size: xx-small; margin-top: 90%; margin-left: -97.5%;">
+                    Europe
+                </h2>
+                <h3 style="color: black; font-family: sans-serif; font-weight: 200; font-size: xx-small; margin-top: 97%; margin-left: -79.5%;">
+                    CULTURAL RELAX
+                </h3>
+                <h5 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: x-small; margin-top: 105%; margin-left: -96.5%;">
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr
+                </h5>
+                 <button style="background-color: #00b4fb; width: fit-content; height: 5vh; margin-top: 115%; margin-left: -120%;">
+                    Details
+                </button>
+            </section>
+            <section>
+                <img src="Bora Bora.jpg">
+                </img>
+                <h4 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: medium; margin-top: 75%; margin-left: -163.5%;">
+                    Bora Bora
+                </h4>
+                <h2 style="color: grey; font-family: sans-serif; font-weight: bolder; font-size: xx-small; margin-top: 90%; margin-left: -95%;">
+                    Asia
+                </h2>
+                <h3 style="color: black; font-family: sans-serif; font-weight: 200; font-size: xx-small; margin-top: 97%; margin-left: -75%;">
+                    HISTORY CULTURAL
+                </h3>
+                <h5 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: x-small; margin-top: 105%; margin-left: -100%">
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr
+                </h5>
+                 <button style="background-color: #00b3f9; width: fit-content; height: 5vh; margin-top: 115%; margin-left: -120%;">
+                    Details
+                </button>
+            </section>
+            <section>
+                <img src="Maldivas.jpeg">
+                </img>
+                <h4 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: medium; margin-top: 75%; margin-left: -164%;">
+                    Maldivas
+                </h4>
+                <h2 style="color: grey; font-family: sans-serif; font-weight: bolder; font-size: xx-small; margin-top: 90%; margin-left: -93%;">
+                    Oceanic
+                </h2>
+                <h3 style="color: black; font-family: sans-serif; font-weight: 200; font-size: xx-small; margin-top: 97%; margin-left: -80%;">
+                    SPORT RELAX
+                </h3>
+                <h5 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: x-small; margin-top: 105%; margin-left: -90%;">
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr
+                </h5>                
+                 <button style="background-color: #00b3f9; width: fit-content; height: 5vh; margin-top: 115%; margin-left: -120%;">
+                    Details
+                </button>
+            </section>         
+        </section>
+    </section>
+    <section class="fourth section">
+        <section class="fourth-cont section">
+            <section>
+                <img src="Phuket..jpg">
+                </img>
+                <h4 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: medium; margin-top: 75%; margin-left: -163.5%;">
+                    Phuket
+                </h4>
+                <h2 style="color: grey; font-family: sans-serif; font-weight: bolder; font-size: xx-small; margin-top: 90%; margin-left: -86%;">
+                    Thailandia
+                </h2>
+                <h3 style="color: black; font-family: sans-serif; font-weight: 200; font-size: xx-small; margin-top: 97%; margin-left: -83%;">
+                    RELAX & CULTURAL
+                </h3>
+                <h5 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: x-small; margin-top: 105%; margin-left: -99%;">
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr
+                </h5>               
+                 <button style="background-color: #00b4fb; width: fit-content; height: 5vh; margin-top: 116%; margin-left: -120%;">
+                    Details
+                </button>
+            </section>
+            <section>
+                <img src="Bora Bora.jpg">
+                </img>
+                <h4 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: medium; margin-top: 75%; margin-left: -165.5%;">
+                    Seychellis
+                </h4>
+                <h2 style="color: grey; font-family: sans-serif; font-weight: bolder; font-size: xx-small; margin-top: 84%; margin-left: -94%;">
+                    Netherlands
+                </h2>
+                <h3 style="color: black; font-family: sans-serif; font-weight: 200; font-size: xx-small; margin-top: 90%; margin-left: -87%;">
+                    HISTORY & SPORT
+                </h3>
+                <h5 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: x-small; margin-top: 98%; margin-left: -96%">
+                    Lorem ipsum dolor sit amet..conseteur sadpscing eistr
+                </h5>                
+                 <button style="background-color: #00b3f9; width: fit-content; height: 5vh; margin-top: 108%; margin-left: -115%;">
+                    Details
+                </button>
+            </section>
+            <section>
+                <img src="Hawaii.jpeg">
+                </img>
+                <h4 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: medium; margin-top: 80%; margin-left: -160%;">
+                    Hawaii
+                </h4>
+                <h2 style="color: grey; font-family: sans-serif; font-weight: bolder; font-size: xx-small; margin-top: 95%; margin-left: -88%;">
+                    Italy
+                </h2>
+                <h3 style="color: black; font-family: sans-serif; font-weight: 200; font-size: xx-small; margin-top: 102%; margin-left: -78%;">
+                    SPORT & RELAX
+                </h3>
+                <h5 style="color: black; font-family: sans-serif; font-weight: bolder; font-size: x-small; margin-top: 110%; margin-left: -98%;">
+                    Lorem ipsum dolor sit amet sadpscing eistr
+                </h5>             
+                 <button style="background-color: #00b3f9; width: fit-content; height: 5vh; margin-top: 125%; margin-left: -120%;">
+                    Details
+                </button>
+            </section>           
+        </section>
+    </section>
+    <section class="image-container">
+        <img src="Beach.jpeg" alt="Image" style="width: 100%; height: 90vh; margin-top: -5%;">
+        <text class="text-overlay">
+             <h6 style="color: white; font-family: sans-serif; font-size: small; font-weight: 700; margin-top: -10%;">
+            KEEP IN TOUCH
+        </h2>
+        <h3 style="color: white; font-family: sans-serif; font-size: xx-large; font-weight: bolder; margin-left: -2%;">
+            Travel With Us
+        </h3>
+        <input class="input-field" required placeholder="Search"/>
+        <button class="input-button">
+            SEND
+        </button>
+    </text>
+    <section class="fifth section">
+        <section class="fifth-cont section">
+            <section>
+                <img src="Logo2.png"></img>
+                    <h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed dapibus eu nisl eget consectetur. Phasellus efficitur 
+                        neque at massa interdum aliquam. Integer dapibus 
+                        efficitur nibh ac tristique. Cras ac vulputate magna, 
+                        sed viverra metus. Phasellus eleifend elit ac convallis gravida. 
+                        In a magna nec nisl consequat auctor eu id ligula. 
+                        Sed purus neque, tempor eget elit id, fringilla tristique justo. 
+                        Fusce finibus interdum nibh in auctor. Sed tempor pretium erat eu laoreet. 
+                    </h2>
+            </section>
+            <section>
+                <h3>
+                    AGENCY  PLACES
+                    <ul>
+                        <li>Sevices   Europe</li>
+                        <li>Insures  Asia</li>
+                        <li>Agency  America</li>
+                        <li>Tourism  Africa</li>
+                        <li>PayInfo  Australia</li>
+                    </ul>
+                </h3>
+                <a href="https://www.facebook.com/profile.php?id=100085549473543">
+                    <img src="Face.png" style="width: 100%; height: 13vh; margin-top: 260%; margin-left: -150%;"/>
+                </a>
+                <a href="https://www.instagram.com/ade_covenant?igsh=YzljYTk1ODg3Zg==">
+                    <img src="Insta.png" style="width: 100%; height: 13vh; margin-top: 260%; margin-left: -210%;"/>
+                </a>
+                <a href="https://wa.me/+2348163457012">
+                    <img src="Whats.png" style="width: 100%; height: 13vh; margin-top: 260%; margin-left: -260%;"/>
+                </a>
+            </section>
+        </section>
+        <div style="background-color: #00b3f9; width: 100%; height: 10vh; margin-top: -19.5%;">
+            <p style="color: black; font-size: medium; font-family: sans-serif; font-weight: bold; text-align: center; padding-top: 2%;">
+                &copy AdeCovenant 20-21/05/2025
+            </p>        
+        </div> 
+    </section>
+</body>
+</html>

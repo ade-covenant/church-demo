@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+<style>
+    *{
+        margin: 0%;
+    }
+    header{
+        background-color: rgb(70, 70, 235);
+        width: 100%;
+        height: 7vh;
+    }
+    header h1{
+        color: white;
+        font-size: small;
+        font-weight: 700;
+        font-family: sans-serif;
+        font-size: medium;
+        word-spacing: 50px;
+        text-justify: inter-word;
+        float: right;
+        margin-right: 20%;
+        margin-top: 1%;
+    }
+    header a{
+        text-decoration: none;
+        color: white;
+    }
+    div{
+        background-image: linear-gradient(to bottom right, rgb(70, 70, 235), rgb(1, 1, 31));
+        width: 100%;
+        height: 70vh;
+    }
+    .first section{
+        background-color: transparent;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .first-cont section{
+        background-color: transparent;
+        width: 50%;
+        height: 70vh;
+    }
+    .first section img{
+        width: 50%;
+        height: 70vh;
+        margin-left: -20%;
+    }
+    .first section h3{
+        color: rgb(3, 3, 115);
+        font-family: sans-serif;
+        font-size: small;
+        margin-top: 20%;
+        margin-left: 30%; 
+    }
+    .first section h1{
+        color: white;
+        font-family: sans-serif;
+        font-size: xx-large;
+        margin-top: 23%;
+        margin-left: -25%;  
+    }
+    .first section h2{
+        color: white;
+        font-family: sans-serif;
+        font-size: medium;
+        margin-top: 29%;
+        margin-left: -60%;
+    }
+    .first section button{
+        background-color: blue;
+        width: 20%;
+        height: 5vh;
+        border-color: blue;
+        border-radius: 15px;
+        margin-top: 35%;
+        margin-left: -20%;
+    }
+    .div{
+        background-image: linear-gradient(to top right, rgb(1, 1, 31),  rgb(70, 70, 235));
+        width: 100%;
+        height: 80vh;
+        margin-top: 0%;
+    }
+    .second section{
+        background-color: none;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .second-cont section{
+        background-color: transparent;
+        width: 20%;
+        height: 25vh;
+        margin-top: 3%;
+        border: 0.1px rgb(25, 25, 210) solid;
+    }
+    .second section :hover{
+        background-image: linear-gradient(to bottom right, rgb(243, 18, 6), rgb(249, 171, 4));
+        color: black;
+        transition-duration: 0s;
+    }
+    .second section img{
+        width: 10%;
+        height: 4vh;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .second section h1{
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: small;
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+    .second section h2{
+        color: grey;
+        font-family: sans-serif;
+        font-size: smaller;
+        margin-top: 25%;
+        margin-left: -55%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .div1{
+        background-image: linear-gradient(to top left, rgb(1, 1, 31),  rgb(70, 70, 235));
+        width: 100%;
+        height: 85vh;
+        margin-top: 0%;
+    }
+    .third section{
+        width: 70%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        margin-left: 10%;
+        
+    }
+    .third-cont section{
+        background-color: transparent;
+        color: black;
+        width: 30%;
+        height: 25vh;
+        border: 1px black solid;
+        
+        position: relative;
+        display: inline-block;
+    }
+        .dd {
+      position: relative;
+      display: inline-block;
+      overflow-y: auto;
+      height: 25vh;
+    }
+    .dd-btn {
+      padding: 15px;
+      text-align: center;
+      background: #173459;
+      border: none;
+      width: 100%;
+      color: #f8f9f9;
+      position: sticky;
+      position: -webkit-sticky;
+    }
+    .dd img{
+      width: 30%;
+      height: 15vh;
+      margin-left: 35%;
+      margin-top: 7%;
+    }
+    .dd-content {
+      position: absolute;
+      display: none;
+      width: 100%;
+      
+      color: black;
+    }
+   
+    .dd:hover > .dd-content {
+      display: block;
+     
+    }
+    .fourth section{
+        width: 70%;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+    .fourth-cont section{
+        background-color: transparent;
+        width: 30%;
+        height: 30vh;
+        border: 1px white solid;
+        margin-top: 7%;
+    }
+    .fourth section img{
+        width: 100%;
+        height: 30vh;
+    }
+    .div2{
+        background-image: linear-gradient(to top left, rgb(1, 1, 31),  rgb(70, 70, 235));
+        width: 100%;
+        height: 117vh;
+        margin-top: 0%;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" style="width: 7%; height: 15vh; margin-left: 15%; margin-top: -1.5%;"/>
+        <h1>
+            <a href="">Home</a> <a href="">About</a> <a href="">Services</a> <a href="">Portfolio</a> <a href="">Contact</a> 
+        </h1>
+    </header>
+    <div>
+        <section class="first section">
+        <section class="first-cont section">
+            <section>
+                <h3>
+                    Welcome to Boxpin
+                </h3>
+                <h1>
+                    Hi I am <span style="color: rgb(3, 3, 61);">Adesina</span> Covenant
+                </h1>
+                <h2>
+                    Web Developer
+                </h2>
+                <button>
+                    More About Me
+                </button>
+                <a href=""><img src="FACE2.png" style="width: 100%; height: 3vh; margin-top: 2630%;"/></a>
+                <a href=""><img src="INSTA2.png" style="width: 100%; height: 3vh; margin-top: 1300%; margin-left: -100%;"/></a>
+                <a href=""><img src="WHATS2.png" style="width: 100%; height: 3vh; margin-top: 1290%; margin-left: -200%;"/></a>
+            </section>
+            <section>
+                <img src="ME3....png"/>
+            </section>
+        </section>
+    </section>
+    </div>
+    <section class="div">
+        <p style="color: white; text-align: center; font-family: sans-serif; font-size: large; font-weight: bold; padding-top: 5%; 
+                    text-decoration: underline double white;">
+            What I Do
+        </p>
+        <section class="second section">
+            <section class="second-cont section">
+                <section style="margin-right: -17%">
+                    <img src="UIUX.png"/>
+                    <h1 style="margin-left: 2%;">
+                        UI/UX Design
+                    </h1>
+                    <h2 style="margin-left: -35%;">
+                        I am webside designer from Boxpin Website Developing Company and i love to get new experience and guidiance from
+                        my mentors and clients.
+                    </h2>
+                </section>
+                <section>
+                    <img src="DESIGN.png"/>
+                    <h1 style="margin-left: 2%;">
+                        Creative Design
+                    </h1>
+                    <h2 style="margin-left: -40%;">
+                        I am webside designer from Boxpin Website Developing Company and i love to get new experience and guidiance from
+                        my mentors and clients.
+                    </h2>
+                </section>
+                <section style="margin-left: -17%">
+                    <img src="CODE.png"/>
+                    <h1 style="margin-left: 2%;">
+                        Web Design
+                    </h1>
+                    <h2 style="margin-left: -35%;">
+                        I am webside designer from Boxpin Website Developing Company and i love to get new experience and guidiance from
+                        my mentors and clients.
+                    </h2>
+                </section>
+            </section>
+        </section>
+        <section class="second section">
+            <section class="second-cont section">
+                <section style="margin-right: -17%; margin-top: -12%;">
+                    <img src="ANIME.png"/>
+                    <h1 style="margin-left: 2%;">
+                        Picuture Animation
+                    </h1>
+                    <h2 style="margin-left: -42%;">
+                        I am webside designer from Boxpin Website Developing Company and i love to get new experience and guidiance from
+                        my mentors and clients.
+                    </h2>
+                </section>
+                <section style="margin-top: -12%;">
+                    <img src="CAM.png"/>
+                    <h1 style="margin-left: 2%;">
+                        Picture Manipulation
+                    </h1>
+                    <h2 style="margin-left: -50%;">
+                        I am webside designer from Boxpin Website Developing Company and i love to get new experience and guidiance from
+                        my mentors and clients.
+                    </h2>
+                </section>
+                <section style="margin-left: -17%; margin-top: -12%;">
+                    <img src="UIUX.png"/>
+                    <h1 style="margin-left: 2%;">
+                        UI/UX Design
+                    </h1>
+                    <h2 style="margin-left: -35%;">
+                        I am webside designer from Boxpin Website Developing Company and i love to get new experience and guidiance from
+                        my mentors and clients.
+                    </h2>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="div1">
+        <p style="color: white; text-align: center; font-family: sans-serif; font-size: large; font-weight: bold; padding-top: 5%; 
+                text-decoration: underline double white;">
+            My Resume
+        </p>
+        <p style="color: white; text-align: center; font-family: sans-serif; font-size: small; font-weight: 500; padding-top: 1%;">
+            (Click to view the full details)
+        </p>
+        <section class="third section">
+            <section class="third-cont section">
+              
+                <section style="margin-right: -10.1%;;">
+                  <div class="dd">
+                   <button class="dd-btn"> Education </button>
+                   <img src="GRAD.png"/>
+    <div class="dd-content">
+        
+       My name is Adesina Covenant, currently an undergraduate at one of the prestigious Universities in Nigeria.
+I am attending the Best State University in the Country (as voted by the nation).
+I began my education at normal age of a typical School Teacher's child in a town called Otu, 
+located in Itesiwaju Local Government, Oke-Ogun Area, Oyo State, Nigeria.
+I attended First Baptist Primary Model School and graduated from Primary School in the year 2014.
+I gained admission into the Secondary of the same Basic School I attended (First Baptist Model College) 
+at September, 2014. I left the school to attend another school after haven completed my 
+Junior Secondary School in the year 2017.
+I did the admission examination and gained admission into School Of Science, Okeho (popularly known as S.O.S.) 
+in the year 2017 and stayed as an hostelites, having excellent students as friends and graduated from 
+Senior Secondary School haven gotten my SSCE Certificate (A Level). I stayed a year at home after 
+falling behind the required cut-off mark of all Universities in an attempt of my first JAMB Examination. 
+I retook the exam the other year (2021) and gained admission into (The Now Best State University in Nigeria)
+ LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY located in Ogbomoso, Oyo State in 2021. 
+ I resumed on Wednesday, 13th January, 2022. And to God be the Glory, 
+ I am now a Potential Finalist (500 Level Student) just almost after completing my Industrial Training (Internship).  
+    </div>
+                </section>
+                <section>
+                   <div class="dd">
+                   <button class="dd-btn"> Education </button>
+                   <img src="GRAD.png"/>
+    <div class="dd-content">
+        
+       My name is Adesina Covenant, currently an undergraduate at one of the prestigious Universities in Nigeria.
+I am attending the Best State University in the Country (as voted by the nation).
+I began my education at normal age of a typical School Teacher's child in a town called Otu, 
+located in Itesiwaju Local Government, Oke-Ogun Area, Oyo State, Nigeria.
+I attended First Baptist Primary Model School and graduated from Primary School in the year 2014.
+I gained admission into the Secondary of the same Basic School I attended (First Baptist Model College) 
+at September, 2014. I left the school to attend another school after haven completed my 
+Junior Secondary School in the year 2017.
+I did the admission examination and gained admission into School Of Science, Okeho (popularly known as S.O.S.) 
+in the year 2017 and stayed as an hostelites, having excellent students as friends and graduated from 
+Senior Secondary School haven gotten my SSCE Certificate (A Level). I stayed a year at home after 
+falling behind the required cut-off mark of all Universities in an attempt of my first JAMB Examination. 
+I retook the exam the other year (2021) and gained admission into (The Now Best State University in Nigeria)
+ LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY located in Ogbomoso, Oyo State in 2021. 
+ I resumed on Wednesday, 13th January, 2022. And to God be the Glory, 
+ I am now a Potential Finalist (500 Level Student) just almost after completing my Industrial Training (Internship).  
+    </div>
+                </section>
+            </section>
+        </section>
+        <section class="third section">
+            <section class="third-cont section">
+                <section style="margin-top: -24.5%; margin-right: -10.1%;">
+                    <div class="dd">
+                   <button class="dd-btn"> Education </button>
+                   <img src="GRAD.png"/>
+    <div class="dd-content">
+        
+       My name is Adesina Covenant, currently an undergraduate at one of the prestigious Universities in Nigeria.
+I am attending the Best State University in the Country (as voted by the nation).
+I began my education at normal age of a typical School Teacher's child in a town called Otu, 
+located in Itesiwaju Local Government, Oke-Ogun Area, Oyo State, Nigeria.
+I attended First Baptist Primary Model School and graduated from Primary School in the year 2014.
+I gained admission into the Secondary of the same Basic School I attended (First Baptist Model College) 
+at September, 2014. I left the school to attend another school after haven completed my 
+Junior Secondary School in the year 2017.
+I did the admission examination and gained admission into School Of Science, Okeho (popularly known as S.O.S.) 
+in the year 2017 and stayed as an hostelites, having excellent students as friends and graduated from 
+Senior Secondary School haven gotten my SSCE Certificate (A Level). I stayed a year at home after 
+falling behind the required cut-off mark of all Universities in an attempt of my first JAMB Examination. 
+I retook the exam the other year (2021) and gained admission into (The Now Best State University in Nigeria)
+ LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY located in Ogbomoso, Oyo State in 2021. 
+ I resumed on Wednesday, 13th January, 2022. And to God be the Glory, 
+ I am now a Potential Finalist (500 Level Student) just almost after completing my Industrial Training (Internship).  
+    </div>
+                </section>
+                <section style="margin-top: -24.5%;">
+                   <div class="dd">
+                   <button class="dd-btn"> Education </button>
+                   <img src="GRAD.png"/>
+    <div class="dd-content">
+        
+       My name is Adesina Covenant, currently an undergraduate at one of the prestigious Universities in Nigeria.
+I am attending the Best State University in the Country (as voted by the nation).
+I began my education at normal age of a typical School Teacher's child in a town called Otu, 
+located in Itesiwaju Local Government, Oke-Ogun Area, Oyo State, Nigeria.
+I attended First Baptist Primary Model School and graduated from Primary School in the year 2014.
+I gained admission into the Secondary of the same Basic School I attended (First Baptist Model College) 
+at September, 2014. I left the school to attend another school after haven completed my 
+Junior Secondary School in the year 2017.
+I did the admission examination and gained admission into School Of Science, Okeho (popularly known as S.O.S.) 
+in the year 2017 and stayed as an hostelites, having excellent students as friends and graduated from 
+Senior Secondary School haven gotten my SSCE Certificate (A Level). I stayed a year at home after 
+falling behind the required cut-off mark of all Universities in an attempt of my first JAMB Examination. 
+I retook the exam the other year (2021) and gained admission into (The Now Best State University in Nigeria)
+ LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY located in Ogbomoso, Oyo State in 2021. 
+ I resumed on Wednesday, 13th January, 2022. And to God be the Glory, 
+ I am now a Potential Finalist (500 Level Student) just almost after completing my Industrial Training (Internship).  
+    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="div2">
+        <p style="color: white; text-align: center; font-family: sans-serif; font-size: large; font-weight: bold; padding-top: 5%; 
+                text-decoration: underline double white;">
+            My Portfolio
+        </p>
+        <p style="color: white; text-align: center; font-family: sans-serif; font-size: small; font-weight: 500; padding-top: 1%;">
+            (Click to check some of my designs)
+        </p>
+        <section class="fourth section">
+            <section class="fourth-cont section">
+                <section style="margin-right: -9%;">
+                    <a href="file:///C:/Users/USER%20PC/Desktop/HTML/SITE%20PROJECT/EDUCATION/Education.html">
+                    <img src="ONE.png"/>
+                    </a>
+                </section>
+                <section style="height: 25vh;">
+                    <a href="file:///C:/Users/USER%20PC/Desktop/HTML/SITE%20PROJECT/FOOD/Food.html">
+                    <img src="TWO.png" style="height: 25vh;"/>
+                    </a>
+                </section>
+                <section style="margin-left: 1%;">
+                    <a href="file:///C:/Users/USER%20PC/Desktop/HTML/SITE%20PROJECT/LOGISTIC/Logistic%20alt.html">
+                    <img src="THREE.png"/>
+                    </a>
+                </section>
+            </section>
+        </section>
+        <section class="fourth section">
+            <section class="fourth-cont section">
+                <section style="margin-top: -5%; margin-right: -9%;">
+                    <a href="file:///C:/Users/USER%20PC/Desktop/HTML/SITE%20PROJECT/MOVIE/MOVIE.html">
+                        <img src="FOUR.png"/>
+                    </a>
+                </section>
+                <section style="margin-top: -8.5%; height: 35vh;">
+                    <a href="file:///C:/Users/USER%20PC/Desktop/HTML/SITE%20PROJECT/TOURISM/Tourism.html">
+                    <img src="FIVE.png" style="height: 35vh"/>
+                    </a>
+                </section>
+                <section style="margin-top: -5%; margin-left: 1%;">
+                    <a href="file:///C:/Users/USER%20PC/Desktop/HTML/SITE%20PROJECT/TRAVEL%20AGENCY/TRAVEL%20AGENCY.html">
+                    <img src="SIX.png"/>
+                    </a>
+                </section>
+            </section>
+        </section>
+        <p style="color: black; font-size: medium; font-family: sans-serif; font-weight: bold; text-align: center; margin-top: -3%;">
+                &copy AdeCovenant 27/05/2025 (Happy Children's Day)
+            </p>
+    </section>
+</body>
+</html>
