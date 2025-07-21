@@ -154,6 +154,10 @@ nav-bar .first-btn:hover{
     background-color: rgb(185, 21, 21);
     transition-duration: 0.3s;
 }
+#a1{
+    text-decoration: none;
+    color: white;
+}
 #div{
     height: 40vh;
 }
