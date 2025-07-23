@@ -333,7 +333,7 @@ h5{
 .next section {
     background-color: none;
     width: 100%;
-    height: 75vh;
+    height: 65vh;
     display: flex;
     justify-content: space-around;
     margin-top: 1%;
@@ -348,14 +348,14 @@ h5{
 
 .next-cont section {
     width: 25%;
-    height: 75vh;
+    height: 60vh;
     margin: 0% 1%;
     animation: scroll-left 40s linear infinite;
 }
 
 .sub-section {
     max-width: 25%;   
-    height: 75vh;
+    height: 60vh;
     background-color: rgb(7, 7, 147); 
     flex-shrink: 0;     
     display: flex;
@@ -376,10 +376,11 @@ h5{
     text-align: center;
     font-weight: bolder;
 }
-.sub-section h2{
+.sub-section .p3{
     font-size: 15px;
-    color: black;
+    color: white;
     text-align: center;
+    padding-top: 0;
 }
 
 .last section{
@@ -664,7 +665,7 @@ h5{
     margin-top: 2%;
 }
 .next-cont .sub-section{
-    height: 22vh;
+    height: 25vh;
     background-color: rgb(7, 7, 147);
     font-size: 8px;
 }
@@ -678,6 +679,11 @@ h5{
     color: white;
     text-align: center;
     font-weight: bolder;
+    padding-top: 0.1rem;
+}
+.sub-section .p3{
+    font-size: 5px;
+    padding-bottom: 0.5rem;
 }
 .last section{
     background-color: rgb(7, 7, 147);
